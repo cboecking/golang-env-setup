@@ -12,9 +12,11 @@ sudo apt-get -y install git
 
 #check to see if go is already installed
 GO_EXISTS=$([ -d $GO_DIR ] && echo "Y" || echo "N")
-if [ $RESULT == "Y" ]; then
+if [[ $RESULT == "Y" ]]
+then
 	echo "GO already installed"
 else
+	echo "Installing Go"
 	cd $GO_TMP
 	sudo curl -O https://storage.googleapis.com/golang/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
 	sudo tar -C /usr/local -xzf go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
