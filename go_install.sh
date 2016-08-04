@@ -6,16 +6,17 @@ GO_ARCH=amd64
 GO_DIR=/usr/local/go/
 GO_TMP=/tmp/
 
-sudo apt-get update
-sudo apt-get -y upgrade
-sudo apt-get -y install git
-
 #check to see if go is already installed
 GO_EXISTS=$([ -d $GO_DIR ] && echo "Y" || echo "N")
 if [[ $GO_EXISTS == "Y" ]]
 then
 	echo "GO already installed"
 else
+	#pre enviornment - assumes first time running this script
+	sudo apt-get update
+	sudo apt-get -y upgrade
+	sudo apt-get -y install git
+
 	echo "Installing Go"
 	cd $GO_TMP
 	sudo curl -O https://storage.googleapis.com/golang/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
