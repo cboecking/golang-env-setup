@@ -12,7 +12,7 @@ sudo apt-get -y install git
 
 #check to see if go is already installed
 GO_EXISTS=$([ -d $GO_DIR ] && echo "Y" || echo "N")
-if [[ $RESULT == "Y" ]]
+if [[ $GO_EXISTS == "Y" ]]
 then
 	echo "GO already installed"
 else
