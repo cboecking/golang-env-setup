@@ -31,3 +31,4 @@ sed -i "$ a\export GOPATH=\$HOME/gowork" ~/.profile
 
 source ~/.profile
 
+cd
