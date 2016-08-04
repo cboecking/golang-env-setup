@@ -44,4 +44,4 @@ $GOPATH/bin/deleteme
 #go to home directory
 cd
 
-echo "if the installation was successful, you should see a hello world message just above this line."
+echo "NOTE: If the installation was successful, you should see a "Hello, World" message just above this line."
