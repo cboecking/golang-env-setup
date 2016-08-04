@@ -7,7 +7,6 @@ GO_DIR=/usr/local/go/
 GO_TMP=/tmp/
 
 sudo apt-get update
-sudo apt-get -y upgrade
 sudo apt-get -y install git
 
 #check to see if go is already installed
