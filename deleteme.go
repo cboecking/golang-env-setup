@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Printf("hello, world - Test Successful - Deleteme Now!\n")
+    fmt.Printf("***********\nHello, World\nYour test was successful\nDeleteme Now!\n***********\n")
 }
