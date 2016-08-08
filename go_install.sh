@@ -44,7 +44,20 @@ $GOPATH/bin/deleteme
 #go to home directory
 cd
 
-#isntall vim molokai color
-wget -P ~/.vim/color/ https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+#install vim molokai color
+wget -P ~/.vim/colors/ https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+
+#install vim plugin manager (vim-plug)
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+#install vim-go
+git clone https://github.com/fatih/vim-go.git ~/.vim/plugged/vim-go
+
+#get Fatih .vimrc
+wget -P ~/ https://raw.githubusercontent.com/fatih/vim-go-tutorial/master/vimrc
+mv ~/vimrc ~/.vimrc
+
+#tell vim to install all necessary Go tools
+vim -c "GoInstallBinaries" -c "qa"
 
 echo "NOTE: If the installation was successful, you should see a "Hello, World" message just above this line."
