@@ -44,4 +44,7 @@ $GOPATH/bin/deleteme
 #go to home directory
 cd
 
+#isntall vim molokai color
+wget -P ~/.vim/color/ https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+
 echo "NOTE: If the installation was successful, you should see a "Hello, World" message just above this line."
