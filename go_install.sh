@@ -3,12 +3,12 @@
 GO_VERSION=1.6.3
 GO_OS=linux
 GO_ARCH=amd64
-GO_DIR=/usr/local/go/
+GO_PATH=/usr/local/go/
 GO_TMP=/tmp/
-GO_TMP_PATH=$HOME/gowork/
+GO_WORKSPACE_PATH=$HOME/gowork/
 
 #check to see if go is already installed
-GO_EXISTS=$([ -d $GO_DIR ] && echo "Y" || echo "N")
+GO_EXISTS=$([ -d $GO_PATH ] && echo "Y" || echo "N")
 if [[ $GO_EXISTS == "Y" ]]
 then
 	echo "GO already installed"
@@ -27,11 +27,14 @@ else
 fi
 
 #add go ccommands to your path
-sed -i "$ a\export PATH=\$PATH:$GO_DIR/bin" ~/.profile
+sed -i "$ a\export PATH=\$PATH:$GO_PATH/bin" ~/.profile
 
 #create your workspace (GOPATH)
-mkdir $GO_TMP_PATH
-sed -i "$ a\export GOPATH=$GO_TMP_PATH" ~/.profile
+mkdir $GO_WORKSPACE_PATH
+sed -i "$ a\export GOPATH=$GO_WORKSPACE_PATH" ~/.profile
+
+#add your workspace go programs to your path
+sed -i "$ a\export PATH=\$PATH:$GO_WORKSPACE_PATH/bin" ~/.profile
 
 #reload your profile
 source ~/.profile
