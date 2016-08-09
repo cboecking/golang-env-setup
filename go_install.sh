@@ -19,9 +19,10 @@ else
 	sudo apt-get -y install git
 
 	echo "Installing Go"
-	cd $GO_TMP
-	sudo curl -O https://storage.googleapis.com/golang/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
-	sudo tar -C /usr/local -xzf go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
+	#cd $GO_TMP
+	curl -fLo $GO_TMP/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz https://storage.googleapis.com/golang/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
+	#sudo curl -O https://storage.googleapis.com/golang/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
+	sudo tar -C /usr/local -xzf $GO_TMP/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
 	cd
 fi
 
@@ -32,17 +33,11 @@ sed -i "$ a\export PATH=\$PATH:$GO_DIR/bin" ~/.profile
 mkdir $GO_TMP_PATH
 sed -i "$ a\export GOPATH=$GO_TMP_PATH" ~/.profile
 
+#reload your profile
 source ~/.profile
 
-#create and execute your first go project
-mkdir -p $GOPATH/src/deleteme/
-cd $GOPATH/src/deleteme/
-wget https://raw.githubusercontent.com/cboecking/golang-env-setup/master/deleteme.go
-go install deleteme
-$GOPATH/bin/deleteme
-
 #go to home directory
-cd
+#cd
 
 #install vim molokai color
 wget -P ~/.vim/colors/ https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
@@ -59,5 +54,12 @@ mv ~/vimrc ~/.vimrc
 
 #tell vim to install all necessary Go tools
 vim -c "GoInstallBinaries" -c "qa"
+
+#create and execute your first go project
+mkdir -p $GOPATH/src/deleteme/
+cd $GOPATH/src/deleteme/
+wget https://raw.githubusercontent.com/cboecking/golang-env-setup/master/deleteme.go
+go install deleteme
+$GOPATH/bin/deleteme
 
 echo "NOTE: If the installation was successful, you should see a "Hello, World" message just above this line."
