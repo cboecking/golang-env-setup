@@ -23,7 +23,7 @@ else
 	curl -fLo $GO_TMP/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz https://storage.googleapis.com/golang/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
 	#sudo curl -O https://storage.googleapis.com/golang/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
 	sudo tar -C /usr/local -xzf $GO_TMP/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
-	cd
+	#cd
 fi
 
 #add go ccommands to your path
@@ -57,8 +57,8 @@ vim -c "GoInstallBinaries" -c "qa"
 
 #create and execute your first go project
 mkdir -p $GOPATH/src/deleteme/
-cd $GOPATH/src/deleteme/
-wget https://raw.githubusercontent.com/cboecking/golang-env-setup/master/deleteme.go
+#cd $GOPATH/src/deleteme/
+wget -P $GOPATH/src/deleteme/ https://raw.githubusercontent.com/cboecking/golang-env-setup/master/deleteme.go
 go install deleteme
 $GOPATH/bin/deleteme
 
