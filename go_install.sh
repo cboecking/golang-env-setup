@@ -59,10 +59,10 @@ mv ~/vimrc ~/.vimrc
 #tell vim to install all necessary Go tools
 vim -c "GoInstallBinaries" -c "qa"
 
-#allow Neovim to use Vim's config
-mkdir -p ~/.config/nvim/
-ln -s ~/.vim ~/.config/nvim
-ln -s ~/.vimrc ~/.config/nvim/init.vim
+#allow Neovim to use Vim's config - note Neovim does not seem ready yet
+#mkdir -p ~/.config/nvim/
+#ln -s ~/.vim ~/.config/nvim
+#ln -s ~/.vimrc ~/.config/nvim/init.vim
 
 #create and execute your first go project
 mkdir -p $GOPATH/src/deleteme/
