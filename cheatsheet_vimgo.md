@@ -1,1 +1,6 @@
-# Vim-go Cheat Sheet
+# Leader Mappings (,)
+
+* b ---> build
+* r ---> run
+
+# Commands (:)
