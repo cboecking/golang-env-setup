@@ -3,6 +3,7 @@
 * b ---> :GoBuild
 * r ---> :GoRun
 * t ---> :GoTest
+* c ---> :GoCoverageToggle
 
 #### Commands
 
@@ -14,6 +15,7 @@
 * :GoTestCompile ---> compiles your test file
 * :GoCoverage ---> shows your test coverage
 * :GoCoverageClear ---> clears coverage formatting
+* :GoCoverageToggle ---> toggles between GoCoverage and GoCoverageClear
 
 #### Quickfix
 
