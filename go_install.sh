@@ -15,10 +15,10 @@ then
 else
 	#pre enviornment - assumes first time running this script
 	
-	#get the latest version of VIM
+	#get the latest version of Vim
 	sudo add-apt-repository ppa:pkg-vim/vim-daily
 	
-	#get the latest version of NeoVIM
+	#get the latest version of Neovim
 	sudo add-apt-repository ppa:neovim-ppa/unstable
 	
 	sudo apt-get update
@@ -58,6 +58,11 @@ mv ~/vimrc ~/.vimrc
 
 #tell vim to install all necessary Go tools
 vim -c "GoInstallBinaries" -c "qa"
+
+#allow Neovim to use Vim's config
+mkdir -p ~/.config/nvim/
+ln -s ~/.vim ~/.config/nvim
+ln -s ~/.vimrc ~/.config/nvim/init.vim
 
 #create and execute your first go project
 mkdir -p $GOPATH/src/deleteme/
