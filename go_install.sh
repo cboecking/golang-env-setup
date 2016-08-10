@@ -40,8 +40,14 @@ sed -i "$ a\export GOPATH=$GO_WORKSPACE_PATH" ~/.profile
 #add your workspace go programs to your path
 sed -i "$ a\export PATH=\$PATH:$GO_WORKSPACE_PATH/bin" ~/.profile
 
+#create a tmux shortcut that sets tmux to use 256 colors
+sed -i "$ a\alias tm=/"tmux -2/"" ~/.profile
+
 #reload your profile
 source ~/.profile
+
+#create tmux config file
+wget ~/.tmux.conf https://raw.githubusercontent.com/cboecking/golang-env-setup/master/.tmux.conf
 
 #install vim molokai color
 wget -P ~/.vim/colors/ https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
@@ -63,9 +69,6 @@ vim -c "GoInstallBinaries" -c "qa"
 #mkdir -p ~/.config/nvim/
 #ln -s ~/.vim ~/.config/nvim
 #ln -s ~/.vimrc ~/.config/nvim/init.vim
-
-#create tmux config file
-wget ~/.tmux.conf https://raw.githubusercontent.com/cboecking/golang-env-setup/master/.tmux.conf
 
 #create and execute your first go project
 mkdir -p $GOPATH/src/deleteme/
