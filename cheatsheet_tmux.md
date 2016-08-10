@@ -9,19 +9,25 @@
 * tmux list-commands ---> lists commands and arguments
 * tmux list-keys ---> lists all key bindings
 
-#Basic Navigation Inside tmux
+#Basic Navigation Inside tmux (prefix = CTRL+B)
 
-* CTRL+B % ---> split to right (vertical divider)
-* CTRL+B " ---> split below (horizontal divider)
-* CTRL+B arrow keys ---> change panes
-* CTRL+B o ---> toggle panes
-* CTRL+B q ---> show pane numbers
-* CTRL+B { or } ---> move panes in direction of brace
-* CTRL+B z ---> full screen
-* CTRL+B c ---> new window
-* CTRL+B , ---> rename window
-* CTRL+B window number ---> switch windows
-* CTRL+B d ---> detatch from session
+*[ ---> start moving cursor around screen
+*alt w ---> copy region
+*] ---> paste
+*% ---> split pane to right (vertical divider)
+*" ---> split pane below (horizontal divider)
+*arrow keys ---> change panes
+*o ---> toggle panes
+*q ---> show pane numbers
+*CTRL+o ---> swap panes
+*{ or } ---> move panes in direction of brace
+*z ---> pane full screen toggle
+*c ---> new window
+*, ---> rename window
+*w ---> list windows
+*f ---> find window
+*window number ---> switch windows
+*d ---> detatch from session
 
 #Other Resource
 
