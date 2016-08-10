@@ -1,6 +1,14 @@
 # Leader Mappings (,)
 
-* b ---> build
-* r ---> run
+* b ---> save and build
+* r ---> save and run
 
-# Commands (:)
+# Commands
+
+* :GoBuild ---> save and build program
+* :GoRun ---> save and run program
+
+# Quickfix
+
+* :cnext ---> jump to next error
+* :cprevious ---> jump to previous error
