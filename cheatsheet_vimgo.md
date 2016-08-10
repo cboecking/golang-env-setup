@@ -12,5 +12,5 @@
 
 #### Quickfix
 
-* <c-n> ---> :cnext ---> jump to next error
-* <c-m> ---> :cprevious ---> jump to previous error
+* CTRL+n ---> :cnext ---> jump to next error
+* CTRL+m ---> :cprevious ---> jump to previous error
