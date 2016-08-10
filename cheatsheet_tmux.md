@@ -1,14 +1,3 @@
-#Command Line
-
-* tmux ---> start tmux
-* tmux new -s session_name ---> start tmux with session name
-* tmux ls ---> list tmux sessions
-* tmux a # session_number ---> attach to session number
-* tmux a -t session_name ---> attach to session name
-* tmux kill-session -t session_name ---> kill session name or number
-* tmux list-commands ---> lists commands and arguments
-* tmux list-keys ---> lists all key bindings
-
 #Basic Navigation Inside tmux (prefix = CTRL+B)
 
 * [ ---> start moving cursor around screen
@@ -29,6 +18,17 @@
 * window number ---> switch windows
 * d ---> detatch from session
 
-#Other Resource
+#Command Line
+
+* tmux ---> start tmux
+* tmux new -s session_name ---> start tmux with session name
+* tmux ls ---> list tmux sessions
+* tmux a # session_number ---> attach to session number
+* tmux a -t session_name ---> attach to session name
+* tmux kill-session -t session_name ---> kill session name or number
+* tmux list-commands ---> lists commands and arguments
+* tmux list-keys ---> lists all key bindings
+
+#Other Resources
 
 * https://gist.github.com/MohamedAlaa/2961058
