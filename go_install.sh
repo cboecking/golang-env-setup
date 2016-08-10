@@ -14,9 +14,16 @@ then
 	echo "GO already installed"
 else
 	#pre enviornment - assumes first time running this script
+	
+	#get the latest version of VIM
+	sudo add-apt-repository ppa:pkg-vim/vim-daily
+	
+	#get the latest version of NeoVIM
+	sudo add-apt-repository ppa:neovim-ppa/unstable
+	
 	sudo apt-get update
 	sudo apt-get -y upgrade
-	sudo apt-get -y install git
+	sudo apt-get -y install git neovim
 
 	echo "Installing Go"
 	sudo curl -fLo $GO_TMP/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz https://storage.googleapis.com/golang/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
