@@ -64,6 +64,9 @@ vim -c "GoInstallBinaries" -c "qa"
 #ln -s ~/.vim ~/.config/nvim
 #ln -s ~/.vimrc ~/.config/nvim/init.vim
 
+#create tmux config file
+wget ~/.tmux.conf https://raw.githubusercontent.com/cboecking/golang-env-setup/master/.tmux.conf
+
 #create and execute your first go project
 mkdir -p $GOPATH/src/deleteme/
 wget -P $GOPATH/src/deleteme/ https://raw.githubusercontent.com/cboecking/golang-env-setup/master/deleteme.go
