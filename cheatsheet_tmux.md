@@ -11,23 +11,23 @@
 
 #Basic Navigation Inside tmux (prefix = CTRL+B)
 
-*[ ---> start moving cursor around screen
-*alt w ---> copy region
-*] ---> paste
-*% ---> split pane to right (vertical divider)
-*" ---> split pane below (horizontal divider)
-*arrow keys ---> change panes
-*o ---> toggle panes
-*q ---> show pane numbers
-*CTRL+o ---> swap panes
-*{ or } ---> move panes in direction of brace
-*z ---> pane full screen toggle
-*c ---> new window
-*, ---> rename window
-*w ---> list windows
-*f ---> find window
-*window number ---> switch windows
-*d ---> detatch from session
+* [ ---> start moving cursor around screen
+* alt w ---> copy region
+* ] ---> paste
+* % ---> split pane to right (vertical divider)
+* " ---> split pane below (horizontal divider)
+* arrow keys ---> change panes
+* o ---> toggle panes
+* q ---> show pane numbers
+* CTRL+o ---> swap panes
+* { or } ---> move panes in direction of brace
+* z ---> pane full screen toggle
+* c ---> new window
+* , ---> rename window
+* w ---> list windows
+* f ---> find window
+* window number ---> switch windows
+* d ---> detatch from session
 
 #Other Resource
 
