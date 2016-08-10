@@ -65,6 +65,9 @@ mv ~/vimrc ~/.vimrc
 #tell vim to install all necessary Go tools
 vim -c "GoInstallBinaries" -c "qa"
 
+#tell vim to install all listed plugins
+vim -c "PlugInstall" -c "qa"
+
 #allow Neovim to use Vim's config - note Neovim does not seem ready yet
 #mkdir -p ~/.config/nvim/
 #ln -s ~/.vim ~/.config/nvim
