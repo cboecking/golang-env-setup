@@ -1,14 +1,16 @@
-# Leader Mappings (,)
+#### Leader Mappings (,)
 
 * b ---> save and build
 * r ---> save and run
 
-# Commands
+#### Commands
 
-* :GoBuild ---> save and build program
-* :GoRun ---> save and run program
+* :GoBuild ---> save and compile packages and dependencies
+* :GoRun ---> save, compile and run program
+* :GoInstall ---> save, compile and install packages and dependencies
+* :GoTest ---> test packages
 
-# Quickfix
+#### Quickfix
 
-* :cnext ---> jump to next error
-* :cprevious ---> jump to previous error
+* <c-n> ---> :cnext ---> jump to next error
+* <c-m> ---> :cprevious ---> jump to previous error
