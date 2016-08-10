@@ -41,7 +41,7 @@ sed -i "$ a\export GOPATH=$GO_WORKSPACE_PATH" ~/.profile
 sed -i "$ a\export PATH=\$PATH:$GO_WORKSPACE_PATH/bin" ~/.profile
 
 #create a tmux shortcut that sets tmux to use 256 colors
-sed -i "$ a\alias tm=/"tmux -2/"" ~/.profile
+sed -i "$ a\alias tm=\"tmux -2\"" ~/.profile
 
 #reload your profile
 source ~/.profile
