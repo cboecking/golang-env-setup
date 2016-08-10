@@ -2,8 +2,14 @@
 
 * b ---> :GoBuild
 * r ---> :GoRun
+* a ---> :cclose ---> close quick fix
 * t ---> :GoTest
 * c ---> :GoCoverageToggle
+
+#### Keystrokes
+
+* if ---> inside function - example: vif select contents of function inside braces
+* af ---> all function - example: vaf select contents of function including function definition
 
 #### Commands
 
@@ -21,3 +27,4 @@
 
 * CTRL+n ---> :cnext ---> jump to next error
 * CTRL+m ---> :cprevious ---> jump to previous error
+* :cclose ---> close quick fix
