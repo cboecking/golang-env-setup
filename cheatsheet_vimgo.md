@@ -45,6 +45,8 @@ Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go 
   * :AS ---> :A w/ horizontal separator
   * :AT ---> :A in new tab
 * :GoDef ---> jumps to any identifier's declaration
+* :GoDefStack ---> shows the stack of :GoDef
+* :GoDefStackClear ---> clears :GoDefStack
 
 #### Quickfix
 
