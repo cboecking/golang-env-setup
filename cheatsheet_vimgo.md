@@ -26,6 +26,8 @@ Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go 
 * af ---> all function - example: vaf select contents of function including function definition
 * gd ---> go to definition (also CTRL+]) - overrides vim gd
 * CTRL+t ---> go back from gd or CTRL+]
+* ]] ---> next function
+* [[ ---> previous function
 
 #### Commands
 
