@@ -1,3 +1,5 @@
+links: [vim_cheat](http://www.worldtimzone.com/res/vi.html)
+
 #### Leader Mappings (,)
 
 * b ---> :GoBuild
