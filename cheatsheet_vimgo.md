@@ -24,6 +24,8 @@ Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go 
 
 * if ---> inside function braces - example: vif select contents of function inside braces
 * af ---> all function - example: vaf select contents of function including function definition
+* gd ---> go to definition (also CTRL+]) - overrides vim gd
+* CTRL+t ---> go back from gd or CTRL+]
 
 #### Commands
 
@@ -49,3 +51,7 @@ Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go 
 * CTRL+n ---> :cnext ---> jump to next error
 * CTRL+m ---> :cprevious ---> jump to previous error
 * :cclose ---> close quick fix
+
+#### Other
+
+* nnoremap <Leader><space> :noh<cr> ---> add to .vimrc to clear last search highlight
