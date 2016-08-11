@@ -11,7 +11,7 @@ links: [vim_cheat](http://www.worldtimzone.com/res/vi.html)
 
 #### Keystrokes
 
-* if ---> inside function - example: vif select contents of function inside braces
+* if ---> inside function braces - example: vif select contents of function inside braces
 * af ---> all function - example: vaf select contents of function including function definition
 
 #### Commands
@@ -26,6 +26,12 @@ links: [vim_cheat](http://www.worldtimzone.com/res/vi.html)
 * :GoCoverageClear ---> clears coverage formatting
 * :GoCoverageToggle ---> toggles between GoCoverage and GoCoverageClear
 * :GoMetaLinter ---> runs go vet, golint and errcheck concurrently
+* :GoAlternate ---> toggle between file and its test file
+  * :A ---> same as :GoAlternate
+  * :AV ---> :A w/ vertical separator
+  * :AS ---> :A w/ horizontal separator
+  * :AT ---> :A in new tab
+* :GoDef ---> jumps to any identifier's declaration
 
 #### Quickfix
 
