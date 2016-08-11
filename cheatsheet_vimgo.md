@@ -1,4 +1,4 @@
-links: [vim_cheat](http://www.worldtimzone.com/res/vi.html)
+Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go tutorial](https://github.com/fatih/vim-go-tutorial)
 
 #### Leader Mappings (,)
 
