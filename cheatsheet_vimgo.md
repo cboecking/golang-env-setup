@@ -11,6 +11,15 @@ links: [vim_cheat](http://www.worldtimzone.com/res/vi.html)
 * v ---> :GoDef with vertical split
 * s ---> :GoDef with horizontal split
 
+#### Snippets ([link to all](https://github.com/fatih/vim-go/blob/master/gosnippets/UltiSnips/go.snippets),  [tutorial](https://github.com/fatih/vim-go-tutorial#snippets)) + tab
+
+* errp ---> if err then panic
+* fn ---> fmt.Println()
+* ff ---> fmt.Printf()
+* ln ---> log.Println()
+* lf ---> log.Printf()
+* json ---> `json:"VARIABLE_HERE"`
+
 #### Keystrokes
 
 * if ---> inside function braces - example: vif select contents of function inside braces
