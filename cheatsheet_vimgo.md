@@ -10,6 +10,7 @@ Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go 
 * l ---> :GoMetaLinter
 * v ---> :GoDef with vertical split
 * s ---> :GoDef with horizontal split
+* i ---> :GoInfo
 
 #### Snippets ([link to all](https://github.com/fatih/vim-go/blob/master/gosnippets/UltiSnips/go.snippets),  [tutorial](https://github.com/fatih/vim-go-tutorial#snippets)) + tab
 
@@ -51,6 +52,7 @@ Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go 
 * :GoDefStack ---> shows the stack of :GoDef
 * :GoDefStackClear ---> clears :GoDefStack
 * :GoDoc ---> opens scratch window with documentation (esc to exit)
+* :GoInfo ---> show signature in status line
 
 #### Quickfix
 
