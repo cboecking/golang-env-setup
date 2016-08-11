@@ -18,7 +18,7 @@ Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go 
 * ff ---> fmt.Printf()
 * ln ---> log.Println()
 * lf ---> log.Printf()
-* json ---> `json:"VARIABLE_HERE"`
+* json ---> json:"VARIABLE_PUT_HERE"
 
 #### Keystrokes
 
