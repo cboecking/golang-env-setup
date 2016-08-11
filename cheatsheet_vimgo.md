@@ -7,6 +7,7 @@ links: [vim_cheat](http://www.worldtimzone.com/res/vi.html)
 * a ---> :cclose ---> close quick fix
 * t ---> :GoTest
 * c ---> :GoCoverageToggle
+* l ---> :GoMetaLinter
 
 #### Keystrokes
 
@@ -24,6 +25,7 @@ links: [vim_cheat](http://www.worldtimzone.com/res/vi.html)
 * :GoCoverage ---> shows your test coverage
 * :GoCoverageClear ---> clears coverage formatting
 * :GoCoverageToggle ---> toggles between GoCoverage and GoCoverageClear
+* :GoMetaLinter ---> runs go vet, golint and errcheck concurrently
 
 #### Quickfix
 
