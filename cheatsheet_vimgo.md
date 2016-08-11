@@ -38,7 +38,7 @@ Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go 
 * :GoCoverage ---> shows your test coverage
 * :GoCoverageClear ---> clears coverage formatting
 * :GoCoverageToggle ---> toggles between GoCoverage and GoCoverageClear
-* :GoMetaLinter ---> runs go vet, golint and errcheck concurrently
+* :GoMetaLinter ---> runs go vet, golint and errcheck concurrently (note: subset run on save)
 * :GoAlternate ---> toggle between file and its test file
   * :A ---> same as :GoAlternate
   * :AV ---> :A w/ vertical separator
