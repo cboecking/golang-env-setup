@@ -28,6 +28,7 @@ Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go 
 * CTRL+t ---> go back from gd or CTRL+]
 * ]] ---> next function
 * [[ ---> previous function
+* K ---> :GoDoc
 
 #### Commands
 
@@ -49,6 +50,7 @@ Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go 
 * :GoDef ---> jumps to any identifier's declaration
 * :GoDefStack ---> shows the stack of :GoDef
 * :GoDefStackClear ---> clears :GoDefStack
+* :GoDoc ---> opens scratch window with documentation (esc to exit)
 
 #### Quickfix
 
