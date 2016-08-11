@@ -50,7 +50,8 @@ source ~/.profile
 wget ~/.tmux.conf https://raw.githubusercontent.com/cboecking/golang-env-setup/master/.tmux.conf
 
 #install vim molokai color
-wget -P ~/.vim/colors/ https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+#note: no longer needed - downloaded when vim plugins are downloaded in one of following commands
+#wget -P ~/.vim/colors/ https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 
 #install vim plugin manager (vim-plug)
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
