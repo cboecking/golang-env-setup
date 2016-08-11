@@ -8,6 +8,8 @@ links: [vim_cheat](http://www.worldtimzone.com/res/vi.html)
 * t ---> :GoTest
 * c ---> :GoCoverageToggle
 * l ---> :GoMetaLinter
+* v ---> :GoDef with vertical split
+* s ---> :GoDef with horizontal split
 
 #### Keystrokes
 
