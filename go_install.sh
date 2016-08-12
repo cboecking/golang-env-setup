@@ -86,5 +86,8 @@ echo "NOTE: If the installation was successful, you should see a "Hello, World" 
 
 #Things I add to .vimrc
 
-#autocomplete braces
+#auto add closing brace
 #inoremap { {<CR>}<Esc>ko
+
+#remap autocomplete to c-space
+#inoremap <Nul> <C-x><C-o>
