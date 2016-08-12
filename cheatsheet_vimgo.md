@@ -54,6 +54,12 @@ Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go 
 * :GoDoc ---> opens scratch window with documentation (esc to exit)
 * :GoInfo ---> show signature in status line
 
+#### Guru ([tutorial](https://github.com/fatih/vim-go-tutorial#guru))
+
+* :GoReferrers ---> finds references to the selected identifier
+* :GoDescribe ---> like :GoInfo only more detailed
+* :GoImplements ---> finds what interfaces a type is implementing
+
 #### Quickfix
 
 * CTRL+n ---> :cnext ---> jump to next error
