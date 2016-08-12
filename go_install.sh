@@ -64,10 +64,10 @@ wget -P ~/ https://raw.githubusercontent.com/fatih/vim-go-tutorial/master/vimrc
 mv ~/vimrc ~/.vimrc
 
 #tell vim to install all necessary Go tools
-vim -c "GoInstallBinaries" -c "qa"
+vim -c "GoInstallBinaries" -c "qa" -s
 
 #tell vim to install all listed plugins
-vim -c "PlugInstall" -c "qa"
+vim -c "PlugInstall" -c "qa" -s
 
 #allow Neovim to use Vim's config - note Neovim does not seem ready yet
 #mkdir -p ~/.config/nvim/
