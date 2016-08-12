@@ -49,10 +49,6 @@ source ~/.profile
 #create tmux config file
 wget ~/.tmux.conf https://raw.githubusercontent.com/cboecking/golang-env-setup/master/.tmux.conf
 
-#install vim molokai color
-#note: no longer needed - downloaded when vim plugins are downloaded in one of following commands
-#wget -P ~/.vim/colors/ https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
-
 #install vim plugin manager (vim-plug)
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
@@ -63,11 +59,17 @@ git clone https://github.com/fatih/vim-go.git ~/.vim/plugged/vim-go
 wget -P ~/ https://raw.githubusercontent.com/fatih/vim-go-tutorial/master/vimrc
 mv ~/vimrc ~/.vimrc
 
+#install vim molokai color - needed to prevent VIM from complaining about missing color
+wget -P ~/.vim/colors/ https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+
 #tell vim to install all necessary Go tools
-vim -c "GoInstallBinaries" -c "qa" -s
+vim -c "GoInstallBinaries" -c "qa"
 
 #tell vim to install all listed plugins
-vim -c "PlugInstall" -c "qa" -s
+vim -c "PlugInstall" -c "qa"
+
+#remove molokai color since added by plugin manager
+rm ~/.vim/colors/molokai.vim
 
 #allow Neovim to use Vim's config - note Neovim does not seem ready yet
 #mkdir -p ~/.config/nvim/
