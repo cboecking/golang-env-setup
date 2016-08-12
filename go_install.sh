@@ -83,3 +83,8 @@ go install deleteme
 $GOPATH/bin/deleteme
 
 echo "NOTE: If the installation was successful, you should see a "Hello, World" message just above this line."
+
+#Things I add to .vimrc
+
+#autocomplete braces
+#inoremap { {<CR>}<Esc>ko
