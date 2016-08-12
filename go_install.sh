@@ -63,7 +63,7 @@ mv ~/vimrc ~/.vimrc
 wget -P ~/.vim/colors/ https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 
 #tell vim to install all necessary Go tools
-vim -c "GoInstallBinaries" -c "qa" -c 'set nomore'
+vim -c 'set nomore' -c "GoInstallBinaries" -c "qa"
 
 #tell vim to install all listed plugins
 vim -c "PlugInstall" -c "qa"
