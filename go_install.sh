@@ -15,6 +15,9 @@ then
 else
 	#pre enviornment - assumes first time running this script
 	
+	#add add-apt-repository - needed for chromebook crouton
+	sudo apt-get install software-properties-common
+	
 	#get the latest version of Vim
 	sudo add-apt-repository ppa:pkg-vim/vim-daily -y
 	
@@ -23,7 +26,7 @@ else
 	
 	sudo apt-get update
 	sudo apt-get -y upgrade
-	sudo apt-get -y install git neovim
+	sudo apt-get -y install git vim curl tmux neovim htop
 
 	echo "Installing Go"
 	sudo curl -fLo $GO_TMP/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz https://storage.googleapis.com/golang/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
