@@ -16,7 +16,7 @@ else
 	#pre enviornment - assumes first time running this script
 	
 	#add add-apt-repository - needed for chromebook crouton
-	sudo apt-get install software-properties-common
+	sudo apt-get install software-properties-common -y
 	
 	#get the latest version of Vim
 	sudo add-apt-repository ppa:pkg-vim/vim-daily -y
