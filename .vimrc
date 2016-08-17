@@ -100,6 +100,12 @@ nnoremap Y y$
 " Enter automatically into the files directory
 autocmd BufEnter * silent! lcd %:p:h
 
+" auto add closing brace
+#inoremap { {<CR>}<Esc>ko
+
+" remap autocomplete to c-space
+#inoremap <Nul> <C-x><C-o>
+
 
 """""""""""""""""""""
 "      Plugins      "
