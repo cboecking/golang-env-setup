@@ -26,7 +26,7 @@ else
 	
 	sudo apt-get update
 	sudo apt-get -y upgrade
-	sudo apt-get -y install git vim curl tmux neovim htop
+	sudo apt-get -y install git vim curl tmux neovim htop zsh
 
 	echo "Installing Go"
 	sudo curl -fLo $GO_TMP/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz https://storage.googleapis.com/golang/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
@@ -73,6 +73,21 @@ vim -c "PlugInstall" -c "qa"
 
 #remove molokai color since added by plugin manager
 rm ~/.vim/colors/molokai.vim
+
+#get clone of oh-my-zsh repo
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+
+#create default .zshrc
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+
+#changing the theme to one that reports on git/mercurial project status
+sudo sed -i "s|ZSH_THEME=\"robbyrussell\"|ZSH_THEME=\"ys\"|" ~/.zshrc
+
+#zsh ACTION NEEDED: Modify the /etc/passwd file to set zsh as your username's default
+#look for something like this:
+#ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+#replace the bash with zsh like this:
+#ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/zsh
 
 #allow Neovim to use Vim's config - note Neovim does not seem ready yet
 #mkdir -p ~/.config/nvim/
