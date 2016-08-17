@@ -59,8 +59,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 git clone https://github.com/fatih/vim-go.git ~/.vim/plugged/vim-go
 
 #get Fatih .vimrc
-wget -P ~/ https://raw.githubusercontent.com/fatih/vim-go-tutorial/master/vimrc
-mv ~/vimrc ~/.vimrc
+wget -P ~/ https://raw.githubusercontent.com/cboecking/golang-env-setup/master/.vimrc
 
 #install vim molokai color - needed to prevent VIM from complaining about missing color
 wget -P ~/.vim/colors/ https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
