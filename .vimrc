@@ -101,10 +101,10 @@ nnoremap Y y$
 autocmd BufEnter * silent! lcd %:p:h
 
 " auto add closing brace
-#inoremap { {<CR>}<Esc>ko
+inoremap { {<CR>}<Esc>ko
 
 " remap autocomplete to c-space
-#inoremap <Nul> <C-x><C-o>
+inoremap <Nul> <C-x><C-o>
 
 
 """""""""""""""""""""
