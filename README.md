@@ -1,12 +1,12 @@
-# golang-env-setup
+# How to Install Go (Golang) Development Environment on an Ubuntu Server or a Chromebook
 
 The purpose of this project is to help me quickly setup a go development environment using either an Ubuntu server or a Chromebook. I created an installation script because (1) I am lazy, (2) I tear down and re-create enviornments all the time, and (3) I want my enviornments to be the same everywhere everytime so that I become proficent with the tools. 
 
-# Installation
+# Golang Environment Installation
 
 Execute the following line from an Ubuntu 14.04 or newer server (see below for Chromebook details):
 
-source <(curl -s https://raw.githubusercontent.com/cboecking/golang-env-setup/master/go_install.sh)
+`source <(curl -s https://raw.githubusercontent.com/cboecking/golang-env-setup/master/go_install.sh)`
 
 # Installation Notes
 
@@ -25,20 +25,20 @@ I am surprised and impressed how easy it is to install Ubuntu behind the scenes 
 # Configuring Chromebook for Development ([more](http://www.davebennett.tech/install-ubuntu-14-04-on-chromebook/))
 
 1. Put chromebook in developer mode. In my case:
-  2. Press Esc + Refresh function key + Power ==> to enter recovery mode
-  3. When the white screen comes up, press Ctrl-d ==> to enter developer mode
+  2. Press `Esc + Refresh function key + Power` ==> to enter recovery mode
+  3. When the white screen comes up, press `Ctrl-d` ==> to enter developer mode
 4. Log into Chrome when it finally boots back up
 6. Download [crouton](https://github.com/dnschneid/crouton) ([direct](https://goo.gl/fd3zc))
 7. Install the Chrome plug-ins listed in the below section
-6. Press Ctrl-Alt-t to open a terminal window then type 'shell'
-7. Go to the downloads directory using: cd ~/Download
-8. Make crouton executable using: chmox +x crouton
-9. Execute crouton to install a cli version of Ubuntu 14.04 using: sudo sh crouton -r trusty -t cli-extra
-10. Create a pristine backup of your new Ubuntu installation using: sudo edit-chroot -b trusty
+6. Press Ctrl-Alt-t to open a terminal window then type `shell`
+7. Go to the downloads directory using: `cd ~/Download`
+8. Make crouton executable using: `chmox +x crouton`
+9. Execute crouton to install a cli version of Ubuntu 14.04 using: `sudo sh crouton -r trusty -t cli-extra`
+10. Create a pristine backup of your new Ubuntu installation using: `sudo edit-chroot -b trusty`
 11. Rename your backup file to include the word 'pristine' for future reference
-11. Start using Ubuntu from a terminal->shell using: sudo enter-chroot
+11. Start using Ubuntu from a terminal->shell using: `sudo enter-chroot`
 11. Note: I created an alias in my ~/.bashrc of 'ec' to execute: sudo enter-chroot
-12. Once you reach your Ubuntu prompt, install curl using: sudo apt-get install curl -y
+12. Once you reach your Ubuntu prompt, install curl using: `sudo apt-get install curl -y`
 13. Install and configure your go environment using the command listed at the top of this page.
 
 # Chrome Plug-ins
