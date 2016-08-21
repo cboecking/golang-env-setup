@@ -11,7 +11,6 @@ source <(curl -s https://raw.githubusercontent.com/cboecking/golang-env-setup/ma
 # Installation Notes
 
 1. The script assumes you want to use terminal-based authoring tools
-2. It assumes you are using a debian based distro (apt-get)
 2. It installs go (golang)
 3. It installs and executes a sample project to confirm all worked as expected
 4. It configures vim with the vim-go development environment
