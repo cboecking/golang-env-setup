@@ -15,6 +15,7 @@ Execute the following line from an Ubuntu 14.04 or newer server (see below for C
 3. It installs and executes a sample project to confirm all worked as expected
 4. It configures vim with the vim-go development environment
 5. It installs tmux so that you can create and share terminal sessions
+6. It appends details (my preferences) to your .profile 
 
 # Using Chromebook for Go (Golang) Development
 
