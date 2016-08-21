@@ -28,7 +28,8 @@ I am surprised and impressed how easy it is to install Ubuntu behind the scenes 
   2. Press Esc + Refresh function key + Power ==> to enter recovery mode
   3. When the white screen comes up, press Ctrl-d ==> to enter developer mode
 4. Log into Chrome when it finally boots back up
-5. Download [crouton](https://github.com/dnschneid/crouton)
+6. Download [crouton](https://github.com/dnschneid/crouton)
+7. Install the Chrome plug-ins listed in the below section
 6. Press Ctrl-Alt-t to open a terminal window then type 'shell'
 7. Go to the downloads directory using: cd ~/Download
 8. Make crouton executable using: chmox +x crouton
@@ -39,6 +40,11 @@ I am surprised and impressed how easy it is to install Ubuntu behind the scenes 
 11. Note: I created an alias in my ~/.bashrc of 'ec' to execute: sudo enter-chroot
 12. Once you reach your Ubuntu prompt, install curl using: sudo apt-get install curl -y
 13. Install and configure your go environment using the command listed at the top of this page.
+
+# Chrome Plug-ins
+
+1. [Secure Shell](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo?hl=en)
+2. [Crosh Window](https://chrome.google.com/webstore/detail/crosh-window/nhbmpbdladcchdhkemlojfjdknjadhmh?hl=en-US) - allows you to open a terminal in a separate window.
 
 # Crouton References
 
