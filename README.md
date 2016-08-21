@@ -28,7 +28,7 @@ I am surprised and impressed how easy it is to install Ubuntu behind the scenes 
   2. Press `Esc + Refresh function key + Power` ==> to enter recovery mode
   3. When the white screen comes up, press `Ctrl-d` ==> to enter developer mode
 4. Log into Chrome when it finally boots back up
-6. Download [crouton](https://github.com/dnschneid/crouton) ([direct](https://goo.gl/fd3zc))
+6. Download [crouton](https://github.com/dnschneid/crouton) ([direct link](https://goo.gl/fd3zc))
 7. Install the Chrome plug-ins listed in the below section
 6. Press Ctrl-Alt-t to open a terminal window then type `shell`
 7. Go to the downloads directory using: `cd ~/Download`
