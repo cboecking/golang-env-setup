@@ -19,7 +19,7 @@ Execute the following line from an Ubuntu 14.04 or newer server (see below for C
 
 # Using Chromebook for Go (Golang) Development
 
-[My Chromebook](https://www.amazon.com/Toshiba-Chromebook-CB35-C3300-Backlit-Keyboard/dp/B015806LSQ/) is proving to be a great development platform for go. It has a 4-core i3 Intel processor, and the 4GB of RAM seem to be enough given how little ChromeOS and Ubuntu cli consume. If you want more RAM, consider [this machine](https://www.amazon.com/dp/B01F8NNY0G/ref=s9_acsd_bw_wf_a_GGLWFSCB_cdl_4).
+[My Chromebook](https://www.amazon.com/Toshiba-Chromebook-CB35-C3300-Backlit-Keyboard/dp/B015806LSQ/) is proving to be a great development platform for go. It has a 4-core i3 Intel processor, and the 4GB of RAM seem to be enough given how little ChromeOS and Ubuntu cli consume. If you want more RAM, consider [this machine](https://www.amazon.com/dp/B01F8NNY0G/ref=s9_acsd_bw_wf_a_GGLWFSCB_cdl_4). Or, you can go extreme with the [pixel](https://pixel.google.com/chromebook-pixel/).
 
 I am surprised by and impressed with how easy it is to install Ubuntu inside your Chromebook and access it directly through the Chrome OS terminal.
 
