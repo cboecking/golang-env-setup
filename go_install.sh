@@ -79,7 +79,7 @@ vim -c 'set nomore' -c "GoInstallBinaries" -c "qa"
 vim -c "PlugInstall" -c "qa"
 
 #remove molokai color since added by plugin manager
-rm ~/.vim/colors/molokai.vim
+rm -f ~/.vim/colors/molokai.vim
 
 echo "HERE: Download config files and plugins for tmux and vim - DONE"
 echo "HERE: Install and configure zsh"
