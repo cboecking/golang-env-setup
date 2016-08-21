@@ -44,7 +44,7 @@ I am surprised and impressed how easy it is to install Ubuntu behind the scenes 
 # Chrome Plug-ins
 
 1. [Secure Shell](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo?hl=en)
-2. [Crosh Window](https://chrome.google.com/webstore/detail/crosh-window/nhbmpbdladcchdhkemlojfjdknjadhmh?hl=en-US) - allows you to open a terminal in a separate window.
+2. [Crosh Window](https://chrome.google.com/webstore/detail/crosh-window/nhbmpbdladcchdhkemlojfjdknjadhmh?hl=en-US) - allows you to open a secure shell in a separate window.
 
 # Crouton References
 
