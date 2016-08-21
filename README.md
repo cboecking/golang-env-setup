@@ -16,7 +16,7 @@ source <(curl -s https://raw.githubusercontent.com/cboecking/golang-env-setup/ma
 4. It configures vim with the vim-go development environment
 5. It installs tmux so that you can create and share terminal sessions
 
-# Using Chromebook for Golang Development
+# Using Chromebook for Go (Golang) Development
 
 [My Chromebook](https://www.amazon.com/Toshiba-Chromebook-CB35-C3300-Backlit-Keyboard/dp/B015806LSQ/) is proving to be a great development platform for go. It has a 4-core i3 Intel processor, and the 4GB of RAM seem to be enough given how little ChromeOS and Ubuntu cli consume. If you want more RAM, consider [this machine](https://www.amazon.com/dp/B01F8NNY0G/ref=s9_acsd_bw_wf_a_GGLWFSCB_cdl_4).
 
