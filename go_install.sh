@@ -11,9 +11,9 @@ GO_WORKSPACE_PATH=$HOME/gowork/
 GO_EXISTS=$([ -d $GO_PATH ] && echo "Y" || echo "N")
 if [[ $GO_EXISTS == "Y" ]]
 then
-	echo "GO already installed"
+	echo "HERE: GO already installed"
 else
-	echo "Installing Go"
+	echo "HERE: Installing Go"
 	#pre enviornment - assumes first time running this script
 	
 	#add add-apt-repository - needed for chromebook crouton
@@ -31,10 +31,10 @@ else
 
 	sudo curl -fLo $GO_TMP/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz https://storage.googleapis.com/golang/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
 	sudo tar -C /usr/local -xzf $GO_TMP/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
-	echo "Installing Go - DONE"
+	echo "HERE: Installing Go - DONE"
 fi
 
-echo "Update profile"
+echo "HERE: Update profile for go"
 #add go ccommands to your path
 sed -i "$ a\export PATH=\$PATH:$GO_PATH/bin" ~/.profile
 
@@ -54,8 +54,8 @@ curl https://raw.githubusercontent.com/cboecking/golang-env-setup/master/profile
 #reload your profile
 source ~/.profile
 
-echo "Update profile - DONE"
-echo "Download config files and plugins for tmux and vim"
+echo "HERE: Update profile for go - DONE"
+echo "HERE: Download config files and plugins for tmux and vim"
 
 #create tmux config file
 wget ~/.tmux.conf https://raw.githubusercontent.com/cboecking/golang-env-setup/master/.tmux.conf
@@ -81,8 +81,8 @@ vim -c "PlugInstall" -c "qa"
 #remove molokai color since added by plugin manager
 rm ~/.vim/colors/molokai.vim
 
-echo "Download config files and plugins for tmux and vim - DONE"
-echo "Install and configure zsh"
+echo "HERE: Download config files and plugins for tmux and vim - DONE"
+echo "HERE: Install and configure zsh"
 
 #get clone of oh-my-zsh repo
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
@@ -93,7 +93,7 @@ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 #changing the zsh theme to one that is nice and friendly to most terminals
 sudo sed -i "s|ZSH_THEME=\"robbyrussell\"|ZSH_THEME=\"ys\"|" ~/.zshrc
 
-echo "Install and configure zsh - DONE"
+echo "HERE: Install and configure zsh - DONE"
 
 #zsh ACTION NEEDED if desired: Modify the /etc/passwd file to set zsh as your username's default
 #look for something like this:
@@ -106,7 +106,7 @@ echo "Install and configure zsh - DONE"
 #ln -s ~/.vim ~/.config/nvim
 #ln -s ~/.vimrc ~/.config/nvim/init.vim
 
-echo "Create your first go project"
+echo "HERE: Create your first go project"
 
 #create and execute your first go project
 mkdir -p $GOPATH/src/deleteme/
@@ -114,6 +114,6 @@ wget -P $GOPATH/src/deleteme/ https://raw.githubusercontent.com/cboecking/golang
 go install deleteme
 $GOPATH/bin/deleteme
 
-echo "Create your first go project - DONE"
+echo "HERE: Create your first go project - DONE"
 
 echo "NOTE: If the installation was successful, you should see a "Hello, World" message just above this line."
