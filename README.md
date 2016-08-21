@@ -20,7 +20,7 @@ Execute the following line from an Ubuntu 14.04 or newer server (see below for C
 
 [My Chromebook](https://www.amazon.com/Toshiba-Chromebook-CB35-C3300-Backlit-Keyboard/dp/B015806LSQ/) is proving to be a great development platform for go. It has a 4-core i3 Intel processor, and the 4GB of RAM seem to be enough given how little ChromeOS and Ubuntu cli consume. If you want more RAM, consider [this machine](https://www.amazon.com/dp/B01F8NNY0G/ref=s9_acsd_bw_wf_a_GGLWFSCB_cdl_4).
 
-I am surprised and impressed how easy it is to install Ubuntu behind the scenes and access it directly through the ChromeOS terminal.
+I am surprised by and impressed with how easy it is to install Ubuntu inside your Chromebook and access it directly through the Chrome OS terminal.
 
 # Configuring Chromebook for Development ([more](http://www.davebennett.tech/install-ubuntu-14-04-on-chromebook/))
 
