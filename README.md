@@ -37,7 +37,7 @@ I am surprised and impressed how easy it is to install Ubuntu behind the scenes 
 10. Create a pristine backup of your new Ubuntu installation using: `sudo edit-chroot -b trusty`
 11. Rename your backup file to include the word 'pristine' for future reference
 11. Start using Ubuntu from a terminal->shell using: `sudo enter-chroot`
-11. Note: I created an alias in my ~/.bashrc of 'ec' to execute: sudo enter-chroot
+11. Note: I created an alias in my ~/.bashrc of `ec` to execute: sudo enter-chroot
 12. Once you reach your Ubuntu prompt, install curl using: `sudo apt-get install curl -y`
 13. Install and configure your go environment using the command listed at the top of this page.
 
