@@ -15,6 +15,7 @@ Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go 
 #### Snippets ([link to all](https://github.com/fatih/vim-go/blob/master/gosnippets/UltiSnips/go.snippets),  [tutorial](https://github.com/fatih/vim-go-tutorial#snippets)) + tab
 
 * errp ---> if err then panic
+* errn ---> if err then return err
 * fn ---> fmt.Println()
 * ff ---> fmt.Printf()
 * ln ---> log.Println()
