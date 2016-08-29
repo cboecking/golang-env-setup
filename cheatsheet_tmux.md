@@ -1,4 +1,4 @@
-#Basic Navigation Inside tmux (prefix = CTRL+B)
+####Basic Navigation Inside tmux (prefix = CTRL+B)
 
 * [ ---> start moving cursor around screen
 * space ---> start select region
@@ -19,7 +19,7 @@
 * window number ---> switch windows
 * d ---> detatch from session
 
-#Command Line
+####Command Line
 
 * tmux ---> start tmux
 * tmux new -s session_name ---> start tmux with session name
@@ -30,6 +30,6 @@
 * tmux list-commands ---> lists commands and arguments
 * tmux list-keys ---> lists all key bindings
 
-#Other Resources
+####Other Resources
 
 * https://gist.github.com/MohamedAlaa/2961058
