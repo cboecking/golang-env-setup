@@ -51,3 +51,13 @@ I am surprised by and impressed with how easy it is to install Ubuntu inside you
 
 1. [Main crouton page](https://github.com/dnschneid/crouton)
 2. [List of commands](https://github.com/dnschneid/crouton/wiki/Crouton-Command-Cheat-Sheet)
+
+# vim-go Resources
+
+1. [Written tutorial](https://github.com/fatih/vim-go-tutorial)
+2. [Video tutorial - same as written](https://www.youtube.com/watch?v=7BqJ8dzygtU)
+3. See cheatsheet in this repository
+
+# goa Resources
+
+1. [goa and gorma discussion and tutorial](https://www.youtube.com/embed/tCFrgWikEX8)
