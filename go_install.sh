@@ -27,7 +27,7 @@ else
 	
 	sudo apt-get update
 	sudo apt-get -y upgrade
-	sudo apt-get -y install git vim curl tmux neovim htop zsh
+	sudo apt-get -y install git vim curl tmux neovim htop zsh httpie
 
 	sudo curl -fLo $GO_TMP/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz https://storage.googleapis.com/golang/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
 	sudo tar -C /usr/local -xzf $GO_TMP/go$GO_VERSION.$GO_OS-$GO_ARCH.tar.gz
