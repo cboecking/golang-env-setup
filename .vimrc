@@ -100,7 +100,7 @@ nnoremap Y y$
 " Enter automatically into the files directory
 autocmd BufEnter * silent! lcd %:p:h
 
-" auto add closing brace
+" auto add closing elements
 inoremap { {<CR>}<Esc>ko
 inoremap " ""<left>
 inoremap ' ''<left>
