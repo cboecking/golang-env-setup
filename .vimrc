@@ -107,8 +107,9 @@ inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 
-" remap autocomplete to c-space
+" remap autocomplete to c-space and improve menu
 inoremap <Nul> <C-x><C-o>
+set completeopt=longest,menuone
 
 
 """""""""""""""""""""
