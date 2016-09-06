@@ -107,6 +107,10 @@ inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 
+" ability to move forward or backward in edit mode - allows you to move past ending elements
+inoremap <C-H> <C-\><C-O>h
+inoremap <C-L> <C-\><C-O>l
+
 " remap autocomplete to c-space and improve menu
 inoremap <Nul> <C-x><C-o>
 set completeopt=longest,menuone
