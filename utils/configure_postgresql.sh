@@ -6,12 +6,16 @@
 # bring in variables
 source moeboe.properties
 
+# create moeboe home diretory if it does not already exist - ignore error otherwise
+mkdir $MOEBOE_PROP_HOME
+
 echo "">>$MOEBOE_PROP_README
 echo "">>$MOEBOE_PROP_README
 echo "************************************************">>$MOEBOE_PROP_README
 echo "************************************************">>$MOEBOE_PROP_README
-echo "HERE: Installing PostgreSQL DB"
-echo "HERE: Installing PostgreSQL DB">>$MOEBOE_PROP_README
+SCRIPTNAME=$(readlink -f "$0")
+echo "HERE: Installing PostgreSQL DB via $SCRIPTNAME"
+echo "HERE: Installing PostgreSQL DB via $SCRIPTNAME">>$MOEBOE_PROP_README
 echo "************************************************">>$MOEBOE_PROP_README
 echo "************************************************">>$MOEBOE_PROP_README
 
@@ -36,7 +40,7 @@ echo "">>$MOEBOE_PROP_README
 echo "">>$MOEBOE_PROP_README
 sudo sed -i '$ a\host   all     all     0.0.0.0/0       md5' /etc/postgresql/$MOEBOE_PROP_DB_PG_VERSION/main/pg_hba.conf
 sudo sed -i 's/local   all             all                                     peer/local   all             all                                     md5/' /etc/postgresql/$PGVERSION/main/pg_hba.conf
-sudo sed -i '$ a\listen_addresses = '"'"'*'"'"' # chuboe '`date +%Y%m%d` /etc/postgresql/$MOEBOE_PROP_DB_PG_VERSION/main/postgresql.conf
+sudo sed -i '$ a\listen_addresses = '"'"'*'"'"' # moeboe '`date +%Y%m%d` /etc/postgresql/$MOEBOE_PROP_DB_PG_VERSION/main/postgresql.conf
 
 # start postgresql after all changes and before installing phppgadmin
 sudo -u postgres service postgresql start
@@ -71,8 +75,8 @@ psql -d $MOEBOE_PROP_DB_PG_NAME -U $MOEBOE_PROP_DB_PG_SU -c "GRANT ALL ON ALL TA
 
 echo "************************************************">>$MOEBOE_PROP_README
 echo "************************************************">>$MOEBOE_PROP_README
-echo "HERE END: Installing PostgreSQL DB"
-echo "HERE END: Installing PostgreSQL DB">>$MOEBOE_PROP_README
+echo "HERE END: Installing PostgreSQL DB via $SCRIPTNAME"
+echo "HERE END: Installing PostgreSQL DB via $SCRIPTNAME">>$MOEBOE_PROP_README
 echo "************************************************">>$MOEBOE_PROP_README
 echo "************************************************">>$MOEBOE_PROP_README
 echo "">>$MOEBOE_PROP_README
