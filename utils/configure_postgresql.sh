@@ -39,7 +39,7 @@ echo "SECURITY NOTICE: Make sure your database is protected by a firewall that p
 echo "">>$MOEBOE_PROP_README
 echo "">>$MOEBOE_PROP_README
 sudo sed -i '$ a\host   all     all     0.0.0.0/0       md5' /etc/postgresql/$MOEBOE_PROP_DB_PG_VERSION/main/pg_hba.conf
-sudo sed -i 's/local   all             all                                     peer/local   all             all                                     md5/' /etc/postgresql/$PGVERSION/main/pg_hba.conf
+sudo sed -i 's/local   all             all                                     peer/local   all             all                                     md5/' /etc/postgresql/$MOEBOE_PROP_DB_PG_VERSION/main/pg_hba.conf
 sudo sed -i '$ a\listen_addresses = '"'"'*'"'"' # moeboe '`date +%Y%m%d` /etc/postgresql/$MOEBOE_PROP_DB_PG_VERSION/main/postgresql.conf
 
 # start postgresql after all changes and before installing phppgadmin
