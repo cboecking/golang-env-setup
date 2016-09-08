@@ -16,7 +16,6 @@ echo "************************************************">>$MOEBOE_PROP_README
 echo "************************************************">>$MOEBOE_PROP_README
 
 sudo apt-get --yes install postgresql postgresql-contrib libaprutil1-dbd-pgsql
-sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD '"$MOEBOE_PROP_DB_PG_SU_PW"';"
 
 # create database password file so that you can connect to the DB via psql without supplying a password
 sudo echo "*:*:*:$MOEBOE_PROP_DB_PG_SU:$MOEBOE_PROP_DB_PG_SU_PW">>/tmp/.pgpass_temp
@@ -61,6 +60,14 @@ then
   echo "">>$MOEBOE_PROP_README
   echo "">>$MOEBOE_PROP_README
 fi
+
+# create/update databases and users
+psql -U $MOEBOE_PROP_DB_PG_SU -c "ALTER USER postgres WITH PASSWORD '"$MOEBOE_PROP_DB_PG_SU_PW"';"
+psql -U $MOEBOE_PROP_DB_PG_SU -c "CREATE DATABSE $MOEBOE_PROP_DB_PG_NAME;"
+psql -d $MOEBOE_PROP_DB_PG_NAME -U $MOEBOE_PROP_DB_PG_SU -c "CREATE SCHEMA $MOEBOE_PROP_DB_PG_SCHEMA;"
+psql -d $MOEBOE_PROP_DB_PG_NAME -U $MOEBOE_PROP_DB_PG_SU -c "CREATE USER $MOEBOE_PROP_DB_PG_USER PASSWORD '$MOEBOE_PROP_DB_PG_USER_PW';"
+psql -d $MOEBOE_PROP_DB_PG_NAME -U $MOEBOE_PROP_DB_PG_SU -c "GRANT ALL ON SCHEMA $MOEBOE_PROP_DB_PG_SCHEMA TO $MOEBOE_PROP_DB_PG_USER;"
+psql -d $MOEBOE_PROP_DB_PG_NAME -U $MOEBOE_PROP_DB_PG_SU -c "GRANT ALL ON ALL TABLES IN SCHEMA $MOEBOE_PROP_DB_PG_SCHEMA TO $MOEBOE_PROP_DB_PG_USER;"
 
 echo "************************************************">>$MOEBOE_PROP_README
 echo "************************************************">>$MOEBOE_PROP_README
