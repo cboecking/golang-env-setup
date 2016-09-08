@@ -17,6 +17,14 @@ echo "************************************************">>$MOEBOE_PROP_README
 
 sudo apt-get --yes install postgresql postgresql-contrib libaprutil1-dbd-pgsql
 sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD '"$MOEBOE_PROP_DB_PG_SU_PW"';"
+
+# create database password file so that you can connect to the DB via psql without supplying a password
+sudo echo "*:*:*:$MOEBOE_PROP_DB_PG_SU:$MOEBOE_PROP_DB_PG_SU_PW">>/tmp/.pgpass_temp
+sudo echo "*:*:*:$MOEBOE_PROP_DB_PG_USER:$MOEBOE_PROP_DB_PG_USER_PW">>/tmp/.pgpass_temp
+sudo chown ${USER_CURR:=$(/usr/bin/id -run)}:$USER_CURR /tmp/.pgpass_temp
+sudo -u $USER_CURR chmod 600 /tmp/.pgpass_temp
+sudo mv /tmp/.pgpass_temp ~/.pgpass
+
 sudo -u postgres service postgresql stop
 
 # The following commands update postgresql to listen for all
@@ -53,13 +61,6 @@ then
   echo "">>$MOEBOE_PROP_README
   echo "">>$MOEBOE_PROP_README
 fi
-
-# create database password file so that you can connect to the DB via psql with supplying connection details
-sudo echo "*:*:*:$IDEMPIERE_DB_USER:$DBPASS">>$TEMP_DIR/.pgpass
-sudo echo "*:*:*:$IDEMPIERE_DB_USER_SU:$DBPASS_SU">>$TEMP_DIR/.pgpass
-sudo chown $IDEMPIEREUSER:$IDEMPIEREUSER $TEMP_DIR/.pgpass
-sudo -u $IDEMPIEREUSER chmod 600 $TEMP_DIR/.pgpass
-sudo mv $TEMP_DIR/.pgpass /home/$IDEMPIEREUSER/
 
 echo "************************************************">>$MOEBOE_PROP_README
 echo "************************************************">>$MOEBOE_PROP_README
