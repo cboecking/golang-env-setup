@@ -54,7 +54,7 @@ then
   sudo apt-get --yes install phppgadmin
 
   # copy the phppgadmin apache2 configuration file that puts phppgadmin on port 8083
-  sudo cp $SCRIPTPATH/web/000-phppgadmin.conf /etc/apache2/sites-enabled
+  sudo cp config/000-phppgadmin.conf /etc/apache2/sites-enabled
   # remove the apache2 default site
   sudo unlink /etc/apache2/sites-enabled/000-default.conf
   # make apache listen on port 8083
