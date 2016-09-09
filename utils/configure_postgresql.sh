@@ -3,6 +3,9 @@
 # The purpose of this script is to install and configure PostgreSQL
 # and the tools needed to support it.
 
+# I always forget to do this before I install stuff
+sudo apt-get update
+
 # bring in variables
 source moeboe.properties
 
