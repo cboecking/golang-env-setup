@@ -4,11 +4,11 @@ declaration (:=) vs assignment (=)
 
 Pointer Example:
 
-* x := 1 //assign value
-* p = &x //p points to the address of x, p is of type *int
-* fmt.Println(*p) //"1"
-* *p = 2 //value at p = 2, equivalent to x = 2
-* fmt.Println(*p) //"2"
+* `x := 1 //assign value`
+* `p = &x //p points to the address of x, p is of type *int`
+* `fmt.Println(*p) //"1"`
+* `*p = 2 //value at p = 2, equivalent to x = 2`
+* `fmt.Println(*p) //"2"`
 
 Pointer vocabulary
 
@@ -23,18 +23,18 @@ vim-go questions:
 2. find all references of a variable (find all pointers)
 
 'new' keyword - rarely used  
-p := new(int)   //p of type *int where *p (value at) is default "0"
-                //prevents creating dummy variable just to get the address
+`p := new(int)   //p of type *int where *p (value at) is default "0"`
+`                //prevents creating dummy variable just to get the address`
 
 Assignment:
 
-* x = 1  //direct
-* *P = 2 //indirect
+* `x = 1  //direct`
+* `*P = 2 //indirect`
 
 Tuple Assignment:
 
-* a, b, c = 1, 2, 3
-* x, y = y, x
+* `a, b, c = 1, 2, 3`
+* `x, y = y, x`
 
 
 ####Collections or Composite Types
