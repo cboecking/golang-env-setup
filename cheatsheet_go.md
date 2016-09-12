@@ -23,19 +23,20 @@ vim-go questions:
 2. find all references of a variable (find all pointers)
 
 'new' keyword - rarely used  
-`p := new(int)   //p of type *int where *p (value at) is default "0"`
-`                //prevents creating dummy variable just to get the address`
-
+```
+p := new(int)   //p of type *int where *p (value at) is default "0"
+                //prevents creating dummy variable just to get the address
+```
 Assignment:
-
-* `x = 1  //direct`
-* `*P = 2 //indirect`
-
+```
+x = 1  //direct
+*P = 2 //indirect
+```
 Tuple Assignment:
-
-* `a, b, c = 1, 2, 3`
-* `x, y = y, x`
-
+```
+a, b, c = 1, 2, 3
+x, y = y, x
+```
 
 ####Collections or Composite Types
 * arrays - fixed size and homo
