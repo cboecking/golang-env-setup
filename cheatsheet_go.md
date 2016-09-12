@@ -9,6 +9,7 @@ p = &x //p points to the address of x, p is of type *int
 fmt.Println(*p) //"1"
 *p = 2 //value at p = 2, equivalent to x = 2
 fmt.Println(*p) //"2"
+fmt.Println(x) //"2"
 ```
 Pointer vocabulary
 
