@@ -3,13 +3,13 @@
 declaration (:=) vs assignment (=)
 
 Pointer Example:
-
-* `x := 1 //assign value`
-* `p = &x //p points to the address of x, p is of type *int`
-* `fmt.Println(*p) //"1"`
-* `*p = 2 //value at p = 2, equivalent to x = 2`
-* `fmt.Println(*p) //"2"`
-
+```
+x := 1 //assign value
+p = &x //p points to the address of x, p is of type *int
+fmt.Println(*p) //"1"
+*p = 2 //value at p = 2, equivalent to x = 2
+fmt.Println(*p) //"2"
+```
 Pointer vocabulary
 
 * $ = "Address of"
