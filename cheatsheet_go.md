@@ -38,7 +38,11 @@ Tuple Assignment:
 a, b, c = 1, 2, 3
 x, y = y, x
 ```
-
+You can create new types from existing types
+```
+type Currency float64 //understood that currency would not be float!!
+type USD Currency //USD gets Currency's abilities which gets float64's abilities ==> usd1 + usd2 is valid
+```
 ####Collections or Composite Types
 * arrays - fixed size and homo
 * structs - fixed size and hetero
