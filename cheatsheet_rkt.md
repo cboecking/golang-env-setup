@@ -1,3 +1,6 @@
+####Summary
+rkt is a docker competitor. Including here because it runs on a chromebook with crouton.
+
 ####Installation
 
 See for latest version: https://github.com/coreos/rkt/releases
