@@ -3,13 +3,15 @@ rkt is a docker competitor. Including here because it runs on a chromebook with 
 
 ####Installation
 
-See for latest version: https://github.com/coreos/rkt/releases
 ```
-RKT_VERSION="1.14.0"
-wget https://github.com/coreos/rkt/releases/download/v1.14.0/rkt-v$RKT_VERSION.tar.gz
-tar xfv rkt-v$RKT_VERSION.tar.gz 
-alias rkt="sudo '${PWD}/rkt-v$RKT_VERSION/rkt'"
+cd
+mkdir rkt_download
+cd rkt_download
+git clone https://github.com/coreos/rkt.git
+cd rkt/scripts
+sudo ./install-rkt.sh
 ```
+
 ####Examples
 
 * [Documentation](https://coreos.com/rkt/docs/latest/)
