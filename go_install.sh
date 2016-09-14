@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GO_VERSION=1.6.3
+GO_VERSION=1.7.1
 GO_OS=linux
 GO_ARCH=amd64
 GO_PATH=/usr/local/go/
