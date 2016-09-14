@@ -12,6 +12,7 @@ alias rkt="sudo '${PWD}/rkt-v$RKT_VERSION/rkt'"
 ```
 ####Examples
 
+* [Documentation](https://coreos.com/rkt/docs/latest/)
 * [Installation and first container](https://coreos.com/blog/getting-started-with-rkt-1.0.html)
 * [Running a redis docker image](https://coreos.com/rkt/docs/latest/running-docker-images.html)
 * [Build an image from a go app](https://coreos.com/rkt/docs/latest/getting-started-guide.html)
