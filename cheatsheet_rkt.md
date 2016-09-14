@@ -7,3 +7,6 @@ wget https://github.com/coreos/rkt/releases/download/v1.14.0/rkt-v$RKT_VERSION.t
 tar xfv rkt-v$RKT_VERSION.tar.gz 
 alias rkt="sudo '${PWD}/rkt-v$RKT_VERSION/rkt'"
 ```
+####Examples
+
+* [Running a redis docker image](https://coreos.com/rkt/docs/latest/running-docker-images.html)
