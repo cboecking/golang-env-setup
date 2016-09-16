@@ -13,7 +13,7 @@ fmt.Println(x) //"2"
 ```
 Pointer vocabulary
 
-* $ = "Address of"
+* & = "Address of"
 * * = "value at"
 
 zero value of a pointer is nil - nil is comparable
