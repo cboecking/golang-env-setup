@@ -34,6 +34,7 @@ I am surprised by and impressed with how easy it is to install Ubuntu inside you
 6. Press Ctrl-Alt-t to open a terminal window then type `shell`
 7. Go to the downloads directory using: `cd ~/Download`
 8. Make crouton executable using: `chmox +x crouton`
+9. [Link to my crouton cheatsheet](https://github.com/cboecking/golang-env-setup/blob/master/cheatsheet_crouton.md)
 9. Execute crouton to install a cli version of Ubuntu 14.04 using: `sudo sh crouton -r trusty -t cli-extra`
 10. Create a pristine backup of your new Ubuntu installation using: `sudo edit-chroot -b trusty`
 11. Rename your backup file to include the word 'pristine' for future reference
