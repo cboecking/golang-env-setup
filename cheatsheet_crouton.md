@@ -3,7 +3,7 @@
 * [crouton github.com](https://github.com/dnschneid/crouton)
 
 ####Installation
-* Download crouton to Downloads folder. See link in [crouton github.com](https://github.com/dnschneid/crouton).
+* Download crouton to Downloads folder. See link in [crouton github.com](https://github.com/dnschneid/crouton#usage).
 * `cd ~/Downloads`
 * 14.04 `sudo sh crouton -r trusty -t cli-extra`
 * 16.04 `sudo sh crouton -r xenial -t cli-extra`
