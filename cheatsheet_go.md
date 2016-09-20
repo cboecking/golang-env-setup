@@ -41,7 +41,6 @@ x, y = y, x
 You can create new types from existing types
 ```
 type Currency float64 //understood that currency would not be float!!
-type USD Currency //USD gets Currency's abilities which gets float64's abilities ==> usd1 + usd2 is valid
 ```
 
 Special init() function - cannot be called; however, executed when package is initialized. Example: used by db providers where the implementation sits behind an interface. -- IS this a true statement - worded correct?
