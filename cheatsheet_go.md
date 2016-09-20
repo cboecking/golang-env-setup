@@ -46,6 +46,29 @@ type USD Currency //USD gets Currency's abilities which gets float64's abilities
 
 Special init() function - cannot be called; however, executed when package is initialized. Example: used by db providers where the implementation sits behind an interface. -- IS this a true statement - worded correct?
 
+####Go 'Types'
+* Basic
+  * Numbers
+  * Strings
+  * Booleans
+* Aggregate
+  * Arrays
+  * Structs
+* Reference
+  * Pointers
+  * Slices
+  * Maps
+  * Functions
+  * Channels
+* Interface
+
+####Basic 'Types'
+* Numbers
+* Strings
+* Booleans 
+
+
+
 ####Collections or Composite Types
 * arrays - fixed size and homo
 * structs - fixed size and hetero
