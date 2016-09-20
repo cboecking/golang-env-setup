@@ -72,7 +72,27 @@ Question: can you / how do you specify the conversion?
   * Signed or unsigned - int8, ..., int64, uint8, ..., uint64
   * Rune - synonym for int32
   * byte - synonym for uint8
-
+* Floating Point
+  * float32
+  * float64 - preferred
+* Complex
+  * complex64
+  * complex128
+* Booleans
+* Strings
+  * String literal ==> "double quote literal that can include escqpe characters"
+  * Raw string literal ==> \`single quote raw string - no escape chars - good for regex\`
+  * Unicode - varaible length strings - one character can occupy more than on byte
+    * len("x") where x is a Korean character would be greater than one
+    * utf8.RuneCountInString("x") would give proper length
+  * String manipulation libraries
+    * strings - search, replace, compare, trim, etc...
+    * bytes - similar to strings for byte[] - has Buffer type for appending...
+    * strconv - string conversions - to and from boolean, numbers, etc...
+    * unicode - IsDigit, IsLetter, IsUpper, etc... ToUpper, etc...
+* Constants
+  * untyped until needed to - has higher precision
+  * iota - constant generator used for series
 
 ####Collections or Composite Types
 * arrays - fixed size and homo
