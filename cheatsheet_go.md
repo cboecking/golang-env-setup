@@ -62,11 +62,16 @@ Special init() function - cannot be called; however, executed when package is in
   * Channels
 * Interface
 
-####Basic 'Types'
-* Numbers
-* Strings
-* Booleans 
+Type conversion - for every type T, T(x) converts the value of x to T (if allowed)  
+Question: can you / how do you specify the conversion?
 
+####Basic 'Types'
+
+*Integer 
+  * natural - int and uint
+  * Signed or unsigned - int8, ..., int64, uint8, ..., uint64
+  * Rune - synonym for int32
+  * byte - synonym for uint8
 
 
 ####Collections or Composite Types
