@@ -37,7 +37,6 @@ sudo -u postgres service postgresql stop
 # connections (not just localhost). Make sure your firewall
 # prevents outsiders from connecting to your server.
 echo "PostgreSQL installed.">>$MOEBOE_PROP_README
-echo "The script installed the phppgadmin tool to help you administer your database.">>$MOEBOE_PROP_README
 echo "SECURITY NOTICE: Make sure your database is protected by a firewall that prevents direct connection from anonymous users.">>$MOEBOE_PROP_README
 echo "">>$MOEBOE_PROP_README
 echo "">>$MOEBOE_PROP_README
