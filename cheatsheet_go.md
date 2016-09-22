@@ -45,6 +45,8 @@ type Currency float64 //understood that currency would not be float!!
 
 Special init() function - cannot be called; however, executed when package is initialized. Example: used by db providers where the implementation sits behind an interface. -- IS this a true statement - worded correct?
 
+Each source file can have its own init() function.
+
 ####Go 'Types'
 * Basic
   * Numbers
