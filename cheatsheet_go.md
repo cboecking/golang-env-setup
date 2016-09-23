@@ -68,7 +68,7 @@ Question: can you / how do you specify the conversion?
 
 ####Basic 'Types'
 
-*Integer 
+* Integer 
   * natural - int and uint
   * Signed or unsigned - int8, ..., int64, uint8, ..., uint64
   * Rune - synonym for int32
@@ -81,6 +81,7 @@ Question: can you / how do you specify the conversion?
   * complex128
 * Booleans
 * Strings
+  * Super Important - for loop range on a string interates across runes and gives you the byte offest of each rune (f3.5) 
   * String literal ==> "double quote literal that can include escqpe characters"
   * Raw string literal ==> \`single quote raw string - no escape chars - good for regex\`
   * Unicode - varaible length strings - one character can occupy more than on byte
