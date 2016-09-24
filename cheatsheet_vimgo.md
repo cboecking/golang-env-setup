@@ -12,7 +12,7 @@ Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go 
 * s ---> :GoDef with horizontal split
 * i ---> :GoInfo
 
-#### Snippets ([link to all](https://github.com/fatih/vim-go/blob/master/gosnippets/UltiSnips/go.snippets),  [tutorial](https://github.com/fatih/vim-go-tutorial#snippets)) + tab
+#### Snippets ([link to all](https://github.com/fatih/vim-go/blob/master/gosnippets/UltiSnips/go.snippets),  [tutorial](https://github.com/fatih/vim-go-tutorial#snippets)) + tab + ctrl+j
 
 * errp ---> if err then panic
 * errn ---> if err then return err
