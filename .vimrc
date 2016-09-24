@@ -101,11 +101,11 @@ nnoremap Y y$
 autocmd BufEnter * silent! lcd %:p:h
 
 " auto add closing elements
-inoremap { {<CR>}<Esc>ko
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
+" inoremap { {<CR>}<Esc>ko
+" inoremap " ""<left>
+" inoremap ' ''<left>
+" inoremap ( ()<left>
+" inoremap [ []<left>
 
 " ability to move forward or backward in edit mode - allows you to move past ending elements
 inoremap <C-H> <C-\><C-O>h
