@@ -22,14 +22,8 @@ Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go 
 * lf ---> log.Printf()
 * json ---> json:"VARIABLE_PUT_HERE"
 
-Example custom snippet (ultisnippet) to create braces:  
-```
-snippet {{ "{...}"
-{
-        ${0}
-}
-endsnippet
-```
+Add more snippets to [go.snippets](https://github.com/cboecking/golang-env-setup/blob/master/utils/go.snippets)
+
 #### Keystrokes
 
 * if ---> inside function braces - example: vif select contents of function inside braces
