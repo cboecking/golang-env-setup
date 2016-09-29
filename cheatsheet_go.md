@@ -94,11 +94,17 @@ Question: can you / how do you specify the conversion?
     * example := f{"ex1", "ex2"} //example declared as a struct of type f. example fields are set to "ex1" and "ex2" based on the order of the struct definition.
     * example := f{field2: "ex2", field1: "ex1"} //example declared as a struct of type f. example fields are set to "ex1" and "ex2" explicitly without regard to order.
 * Pointer Type
-  * Note assume for the following statements: x := 4 //x declared as int of value 4
+  * Assume for the following statements: x := 4 //x declared as int of value 4
   * var y *int //y declared as a pointer to an int (*int) and defaults to nil
   * y = &x //y assigned to the address of x
   * y := new(int) //y declared as *int and defaults to an address of an int whose value is default
   * *y = 12 //updates the value = 12 at the address of y
+* Slice Type
+  * Assume for the following statements: j := [...]string{"jan", "feb", "mar", "apr", "may", "jun"} //declare an array
+  * js := j[1:3] //js is declared as a slice where len(js) = 2 and js values are ["feb", "mar"] 
+  * var js []string //js declared as a slice where len(js) = 0 and js is nil
+  * js := []string(nil) //js declared as a slice where len(js) = 0 and js is nil
+  * js := []string{} //js declared as a slice where len(js) = 0 and js points to the address of an array
 
 ####Basic 'Types'
 
