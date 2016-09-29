@@ -111,6 +111,8 @@ Question: can you / how do you specify the conversion?
 * Map Type
   * var k map[string]int //k declared as a map with string keys and int values and k is nil
   * k := make(map[string]int) //k declared as a map with string keys and int values and k points to an empty map
+  * k := map[string]int{} //k declared as a map with string keys and int values and k points to an empty map
+  * k := map[string]int{"sammy": 33, "james": 10} //k declared as a map with string keys and int values and k points to a populated map 
 
 ####Basic 'Types'
 
