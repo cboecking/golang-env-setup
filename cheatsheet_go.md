@@ -104,7 +104,10 @@ Question: can you / how do you specify the conversion?
   * js := j[1:3] //js is declared as a slice where len(js) = 2 and js values are ["feb", "mar"] 
   * var js []string //js declared as a slice where len(js) = 0 and js is nil
   * js := []string(nil) //js declared as a slice where len(js) = 0 and js is nil
-  * js := []string{} //js declared as a slice where len(js) = 0 and js points to the address of an array
+  * js := []string{} //js declared as a slice where len(js) = 0 and js points to the address of an unnamed array
+  * js := make([]string, 4) //js declared as a slice where len(js) = 4 and js points to the address of an unnamed array
+  * js := make([]string, 4, 10) //js declared as a slice where len(js) = 4, capacity = 10 and js points to the address of an unnamed array
+  * js := make([]string, 4)[:10] //js declared as a slice where len(js) = 4, capacity = 10 and js points to the address of an unnamed array
 
 ####Basic 'Types'
 
