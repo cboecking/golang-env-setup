@@ -86,7 +86,11 @@ Question: can you / how do you specify the conversion?
   * e := [...]int{1,2,3} //e[0]=1, etc...
   * e := [...]string{0:"zero", 1:"one"}
 * Struct
-  * 
+  * create type 
+    * type f struct {field1, field2 string}
+  * create variable
+    * var example f //f defaults to a struct whose field are default
+    * example := f{"ex1", "ex2"}
 
 ####Basic 'Types'
 
