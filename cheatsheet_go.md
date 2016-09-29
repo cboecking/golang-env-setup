@@ -80,7 +80,7 @@ Question: can you / how do you specify the conversion?
 * String Type
   * `var d string` //d declared as a string with a default value = ""
   * `d := "chucksteak"` //literal - d declared as a string with a value = "chucksteak"
-  * ``d := `steak``` //raw literal - d declared as a string with a value = "steak"
+  * ``d := `steak` `` //raw literal - d declared as a string with a value = "steak"
     * Note: raw literals ignore escape characters and new lines (can span multiple lines)
 * Array Type
   * `var e [10]string` //e declared as an array of size 10 elements whose elements are default
