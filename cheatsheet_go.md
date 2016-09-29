@@ -75,8 +75,18 @@ Question: can you / how do you specify the conversion?
   * var b float64 //b=0.0 default value
   * b := 3.3
 * Boolean
-  * var c boolean //c=false default value
+  * var c bool //c=false default value
   * c := true
+* String
+  * var d string //d="" default value
+  * d := "chucksteak" //literal
+  * d := \`steak\` //raw literal
+* Array
+  * var e [10]string //filled with default strings
+  * e := [...]int{1,2,3} //e[0]=1, etc...
+  * e := [...]string{0:"zero", 1:"one"}
+* Struct
+  * 
 
 ####Basic 'Types'
 
