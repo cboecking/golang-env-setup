@@ -66,6 +66,18 @@ Each source file can have its own init() function.
 Type conversion - for every type T, T(x) converts the value of x to T (if allowed)  
 Question: can you / how do you specify the conversion?
 
+####How to Create new References
+
+* Integer
+  * var a int //a=0 default value
+  * a := 0
+* Float
+  * var b float64 //b=0.0 default value
+  * b := 3.3
+* Boolean
+  * var c boolean //c=false default value
+  * c := true
+
 ####Basic 'Types'
 
 * Integer 
