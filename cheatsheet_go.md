@@ -92,7 +92,7 @@ Question: can you / how do you specify the conversion?
   * create variable from a struct
     * var example f //example declared as a struct of type f. example fields are default
     * example := f{"ex1", "ex2"} //example declared as a struct of type f. example fields are set to "ex1" and "ex2" based on the order of the struct definition.
-    * example := f{field....
+    * example := f{field2: "ex2", field1: "ex1"} //example declared as a struct of type f. example fields are set to "ex1" and "ex2" explicitly without regard to order.
     
 * Pointer
   * x := 4 //x declared as int of value 4
