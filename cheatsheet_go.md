@@ -68,33 +68,32 @@ Question: can you / how do you specify the conversion?
 
 ####How to Create new Types and Variables
 
-* Integer
+* Integer Type
   * var a int //a declared as an int with a default value = 0 
   * a := 5 //a declared as an int with a value = 5
-* Float
+* Float Type
   * var b float64 //b declared as an float64 with a default value = 0.0
   * b := 3.3 //b declared as a float64 with a value = 3.3
-* Boolean
+* Boolean Type
   * var c bool //c declared as boolean with a default value = false
   * c := true //c declared as boolean with a value = true
-* String
+* String Type
   * var d string //d declared as a string with a default value = ""
   * d := "chucksteak" //literal - d declared as a string with a value = "chucksteak"
   * d := \`steak\` //raw literal - d declared as a string with a value = "steak"
     * Note: raw literals ignore escape characters and new lines (can span multiple lines)
-* Array
+* Array Type
   * var e [10]string //e declared as an array of size 10 elements whose elements are default
   * e := [...]int{5,6,7} //e declared as an array of size 3 elements whose elements e[0]=5, e[1]=6, etc...
   * e := [...]string{1:"one", 5:"five"} //e declared as an array of size 6 elements whose elements e[1]="one", e[5]="five, all others are default
-* Struct
+* Struct Type
   * create struct type 
     * type f struct {field1, field2 string}
   * create variable from a struct
     * var example f //example declared as a struct of type f. example fields are default
     * example := f{"ex1", "ex2"} //example declared as a struct of type f. example fields are set to "ex1" and "ex2" based on the order of the struct definition.
     * example := f{field2: "ex2", field1: "ex1"} //example declared as a struct of type f. example fields are set to "ex1" and "ex2" explicitly without regard to order.
-    
-* Pointer
+* Pointer Type
   * x := 4 //x declared as int of value 4
   * y := &x //y declared as a pointer to an int (*int) and points to x
 
