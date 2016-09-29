@@ -4,10 +4,10 @@ declaration (:=) vs assignment (=)
 
 Pointer Example:
 ```
-x := 1 //assign value
-p = &x //p points to the address of x, p is of type *int
+x := 1 //x declared as an int and assigned a value = 1
+p := &x //p declared as a pointer to an int (*int) and assigned to the address of x
 fmt.Println(*p) //"1"
-*p = 2 //value at p = 2, equivalent to x = 2
+*p = 2 //p points to a value, find the value and set it to 2, similar effect as x = 2
 fmt.Println(*p) //"2"
 fmt.Println(x) //"2"
 ```
