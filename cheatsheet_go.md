@@ -73,14 +73,14 @@ Question: can you / how do you specify the conversion?
   * `a := 5` //a declared as an int with a value = 5
 * Float Type
   * `var b float64` //b declared as an float64 with a default value = 0.0
-  * `b := 3.3`` //b declared as a float64 with a value = 3.3
+  * `b := 3.3` //b declared as a float64 with a value = 3.3
 * Boolean Type
-  * var c bool` //c declared as boolean with a default value = false
+  * `var c bool` //c declared as boolean with a default value = false
   * `c := true` //c declared as boolean with a value = true
 * String Type
   * `var d string` //d declared as a string with a default value = ""
   * `d := "chucksteak"` //literal - d declared as a string with a value = "chucksteak"
-  * d := \`steak\` //raw literal - d declared as a string with a value = "steak"
+  * ``d := `steak``` //raw literal - d declared as a string with a value = "steak"
     * Note: raw literals ignore escape characters and new lines (can span multiple lines)
 * Array Type
   * `var e [10]string` //e declared as an array of size 10 elements whose elements are default
