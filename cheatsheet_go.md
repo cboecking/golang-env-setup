@@ -93,6 +93,9 @@ Question: can you / how do you specify the conversion?
     * `var example f` //example declared as a struct of type f. example fields are default
     * `example := f{"ex1", "ex2"}` //example declared as a struct of type f. example fields are set to "ex1" and "ex2" based on the order of the struct definition.
     * `example := f{field2: "ex2", field1: "ex1"}` //example declared as a struct of type f. example fields are set to "ex1" and "ex2" explicitly without regard to order.
+  * create pointers to structs
+    * `examplePointer := &f{"ex1", "ex2"}` //examplePointer declared as a pointer to an unnamed struct of type f. fields are set to "ex1" and "ex2" based on order
+    * `examplePointer := new(f)` //examplePointer declared as a pointer to an unnamed struct of type f. fields are default. fields can be set with `*examplePointer = f{"ex1", "ex2"}`
 * Pointer Type
   * Assume for the following statements: `x := 4` //x declared as int of value 4
   * `var y *int` //y declared as a pointer to an int (*int) and defaults to nil
@@ -143,6 +146,24 @@ Question: can you / how do you specify the conversion?
 * Constants
   * untyped until needed to - has higher precision
   * iota - constant generator used for series
+
+####Aggregate Types
+
+* Arrays
+  * have a fixed sise of 'elements'
+  * accessed via subscripts, example: a[2] = 2
+  * iterage across using the for loop 'range'
+  * the size of the array is part of its type
+  * if the array elements are comparable, then arrays are comparable using == and !=
+  * elements of an array are defaulted when to specified
+* Structs
+  * have a fixed size of 'fields'
+  * fields accessed via dot notation, example: EmployeeStruct.Name = "bob"
+  * dot notation automatically dereferences pointers to structs
+  * field order is part of identity, example: structs with the same fields and field values but with different field order are not equal
+  * structs cannot contain their own type, but can contain pointers to their own type
+  * struct fields automatically get their default value when to specified otherwise
+  * 
 
 ####Collections or Composite Types
 * arrays - fixed size and homo
