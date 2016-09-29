@@ -66,7 +66,7 @@ Each source file can have its own init() function.
 Type conversion - for every type T, T(x) converts the value of x to T (if allowed)  
 Question: can you / how do you specify the conversion?
 
-####How to Create new Instances of Types
+####How to Create new Types and Variables
 
 * Integer
   * var a int //a=0 default value
