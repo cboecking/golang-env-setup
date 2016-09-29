@@ -87,11 +87,13 @@ Question: can you / how do you specify the conversion?
   * e := [...]int{5,6,7} //e declared as an array of size 3 elements whose elements e[0]=5, e[1]=6, etc...
   * e := [...]string{1:"one", 5:"five"} //e declared as an array of size 6 elements whose elements e[1]="one", e[5]="five, all others are default
 * Struct
-  * create type 
+  * create struct type 
     * type f struct {field1, field2 string}
-  * create variable
-    * var example f //defaults to a struct whose fields are default
-    * example := f{"ex1", "ex2"}
+  * create variable from a struct
+    * var example f //example declared as a struct of type f. example fields are default
+    * example := f{"ex1", "ex2"} //example declared as a struct of type f. example fields are set to "ex1" and "ex2" based on the order of the struct definition.
+    * example := f{field....
+    
 * Pointer
   * x := 4 //x declared as int of value 4
   * y := &x //y declared as a pointer to an int (*int) and points to x
