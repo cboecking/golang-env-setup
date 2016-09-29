@@ -108,6 +108,9 @@ Question: can you / how do you specify the conversion?
   * js := make([]string, 4) //js declared as a slice where len(js) = 4 and js points to the address of an unnamed array
   * js := make([]string, 4, 10) //js declared as a slice where len(js) = 4, capacity = 10 and js points to the address of an unnamed array
   * js := make([]string, 4)[:10] //js declared as a slice where len(js) = 4, capacity = 10 and js points to the address of an unnamed array
+* Map Type
+  * var k map[string]int //k declared as a map with string keys and int values and k is nil
+  * k := make(map[string]int) //k declared as a map with string keys and int values and k points to an empty map
 
 ####Basic 'Types'
 
