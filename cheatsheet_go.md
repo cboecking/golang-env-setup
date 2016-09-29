@@ -94,8 +94,11 @@ Question: can you / how do you specify the conversion?
     * example := f{"ex1", "ex2"} //example declared as a struct of type f. example fields are set to "ex1" and "ex2" based on the order of the struct definition.
     * example := f{field2: "ex2", field1: "ex1"} //example declared as a struct of type f. example fields are set to "ex1" and "ex2" explicitly without regard to order.
 * Pointer Type
-  * x := 4 //x declared as int of value 4
-  * y := &x //y declared as a pointer to an int (*int) and points to x
+  * Note assume for the following statements: x := 4 //x declared as int of value 4
+  * var y *int //y declared as a pointer to an int (*int) and defaults to nil
+  * y = &x //y assigned to the address of x
+  * y := new(int) //y declared as *int and defaults to an address of an int whose value is default
+  * *y = 12 //updates the value = 12 at the address of y
 
 ####Basic 'Types'
 
