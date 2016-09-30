@@ -1,6 +1,3 @@
-####References
-* [Slice Tricks](https://github.com/golang/go/wiki/SliceTricks)
-
 ####Program structure
 
 declaration (:=) vs assignment (=)
@@ -173,6 +170,7 @@ Question: can you / how do you specify the conversion?
   * slice is an alias to an underlying array with start, length, and capacity
   * slices are not comparable
   * be careful with passing slices into functions. They can modify the slice and even resize (allocate different memory) for the slice invalidating the original reference/alias. Append is the perfect example.
+  * [Slice Tricks](https://github.com/golang/go/wiki/SliceTricks)
 * Maps
   * maps are accessed with subscript notation: testValue := testMap["test key"]
   * all keys must be the same - all values must be the same - keys and values do not need to be the same
