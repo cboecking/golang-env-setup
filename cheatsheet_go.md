@@ -174,7 +174,11 @@ Question: can you / how do you specify the conversion?
   * slices are not comparable
   * be careful with passing slices into functions. They can modify the slice and even resize (allocate different memory) for the slice invalidating the original reference/alias. Append is the perfect example.
 * Maps
-  * All keys must be the same - all values must be the same
+  * maps are accessed with subscript notation: testValue := testMap["test key"]
+  * all keys must be the same - all values must be the same - keys and values do not need to be the same
+  * default value for a map is nil - a reference to no hash table at all
+  * most operations on a nil maps are safe except for add - add results in a panic
+  * maps cannot be compared with other maps, but can be compared with nil
 
 ####Collections or Composite Types
 * arrays - fixed size and homo
