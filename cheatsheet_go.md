@@ -89,6 +89,7 @@ Question: can you / how do you specify the conversion?
   * `var e [10]string` //e declared as an array of size 10 elements whose elements are default
   * `e := [...]int{5,6,7}` //e declared as an array of size 3 elements whose elements e[0]=5, e[1]=6, etc...
   * `e := [...]string{1:"one", 5:"five"}` //e declared as an array of size 6 elements whose elements e[1]="one", e[5]="five, all others are default
+  * `var a = [5][2]int{{0, 0}, {1, 2}, {2, 4}, {3, 6}, {4, 8}}` //e declared as 2d array with inialized element values
 * Struct Type
   * create struct type 
     * `type f struct {field1, field2 string}`
@@ -165,8 +166,15 @@ Question: can you / how do you specify the conversion?
   * dot notation automatically dereferences pointers to structs
   * field order is part of identity, example: structs with the same fields and field values but with different field order are not equal
   * structs cannot contain their own type, but can contain pointers to their own type
-  * struct fields automatically get their default value when to specified otherwise
-  * 
+  * struct fields automatically get their default value when not specified otherwise
+
+####Reference Types
+* Slices
+  * slice is an alias to an underlying array with start, length, and capacity
+  * slices are not comparable
+  * be careful with passing slices into functions. They can modify the slice and even resize (allocate different memory) for the slice invalidating the original reference/alias. Append is the perfect example.
+* Maps
+  * All keys must be the same - all values must be the same
 
 ####Collections or Composite Types
 * arrays - fixed size and homo
