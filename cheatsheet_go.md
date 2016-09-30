@@ -1,3 +1,6 @@
+####References
+* [Slice Tricks](https://github.com/golang/go/wiki/SliceTricks)
+
 ####Program structure
 
 declaration (:=) vs assignment (=)
