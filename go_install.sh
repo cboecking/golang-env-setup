@@ -72,6 +72,9 @@ wget -P ~/ https://raw.githubusercontent.com/cboecking/golang-env-setup/master/.
 #install vim molokai color - needed to prevent VIM from complaining about missing color
 wget -P ~/.vim/colors/ https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 
+#install my personal snippits
+wget -P ~/.vim/UltiSnips/ https://raw.githubusercontent.com/cboecking/golang-env-setup/master/utils/go.snippets
+
 #tell vim to install all necessary Go tools
 vim -c 'set nomore' -c "GoInstallBinaries" -c "qa"
 
