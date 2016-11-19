@@ -132,6 +132,9 @@ let g:go_highlight_methods = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_generate_tags = 1
 
+" ultisnips
+let g:UltiSnipsEditSplit = "vertical"
+
 " Open :GoDeclsDir with ctrl-g
 nmap <C-g> :GoDeclsDir<cr>
 imap <C-g> <esc>:<C-u>GoDeclsDir<cr>
