@@ -1,5 +1,13 @@
 Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go tutorial](https://github.com/fatih/vim-go-tutorial)
 
+#### Learning right now
+
+* ,v ---> :GoDef with vertical split
+* ,i ---> :GoInfo
+* K ---> :GoDoc
+* motion+if+tab ---> inside function braces - example: vif select contents of function inside braces
+* motion+af+tab ---> all function - example: vaf select contents of function including function definition
+
 #### Leader Mappings (,)
 
 * b ---> :GoBuild
