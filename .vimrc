@@ -117,6 +117,9 @@ inoremap <C-L> <C-\><C-O>l
 inoremap <Nul> <C-x><C-o>
 set completeopt=longest,menuone
 
+" use j and k to scroll in autocomplete list
+inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
+inoremap <expr> k ((pumvisible())?("\<C-p>"):("k"))
 
 """""""""""""""""""""
 "      Plugins      "
