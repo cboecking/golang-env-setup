@@ -109,6 +109,9 @@ autocmd BufEnter * silent! lcd %:p:h
 " inoremap ( ()<left>
 " inoremap [ []<left>
 
+" shortcut for escape key (you can also use c-c
+inoremap ;; <esc>
+
 " ability to move forward or backward in edit mode - allows you to move past ending elements
 inoremap <C-H> <C-\><C-O>h
 inoremap <C-L> <C-\><C-O>l
