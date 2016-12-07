@@ -178,6 +178,9 @@ Question: can you / how do you specify the conversion?
   * most operations on a nil maps are safe except for add - add results in a panic
   * maps cannot be compared with other maps, but can be compared with nil
 
+####Interfaces
+* Can be implemented without being declared. This is a big big deal because it gives go the ability to implement an interface without depending on other code. Example: the time package implements the stringer interface from fmt without really it. Time is a low level package. It would be inappropriate for the time package to depend on fmt (a relatively heavy package). But, because time implements the string function, the stringer interface is satisfied and therefore can be printed by fmt.
+
 ####Collections or Composite Types
 * arrays - fixed size and homo
 * structs - fixed size and hetero
