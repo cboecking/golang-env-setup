@@ -182,7 +182,7 @@ Question: can you / how do you specify the conversion?
 * Can be implemented without being declared. This is a big big deal because: 
     * it gives go code the ability to implement an interface without depending on other packages. Example: the time package implements the fmt.stringer interface without really knowing it. Time is a low level package. It would be inappropriate for the time package to depend on fmt (a relatively heavy package). But, because time implements the string function, the fmt.stringer interface is satisfied and therefore can be printed by fmt.
     * it gives go code the ability to create an interface after the fact. You may by using a library from someone else (of which you have no control over), and you may observe a pattern in how you use this library. Because you can create and use your own interfaces, you can write better code with fewer dependencies.
-    * [here is a great video on the topic](https://www.youtube.com/watch?v=0AK3d5HW7UM&feature=em-subs_digest-vrecs)
+    * [here is a great video on the topic - minutes 0 through 15](https://www.youtube.com/watch?v=0AK3d5HW7UM&feature=em-subs_digest-vrecs)
 
 ####Collections or Composite Types
 * arrays - fixed size and homo
