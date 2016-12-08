@@ -48,6 +48,21 @@ I am surprised by and impressed with how easy it is to install Ubuntu inside you
 1. [Secure Shell](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo?hl=en)
 2. [Crosh Window](https://chrome.google.com/webstore/detail/crosh-window/nhbmpbdladcchdhkemlojfjdknjadhmh?hl=en-US) - allows you to open a secure shell in a separate window.
 
+# ChromeOS and OpenVPN
+
+[Easy way to connect to openvpn server - see openvpn2 script](https://forums.openvpn.net/viewtopic.php?t=14452)
+
+```
+Put chromebook in developer mode
+copy above/link openvpn2 script to ~/Downloads/openpvn2
+enter shell
+cd /usr/local/bin/
+sudo cp ~/Downloads/openvpn2 .
+sudo chmod +x openvpn2
+cd ~/Downloads/
+openvpn2 yourVPNfile.ovpn
+ctrl+c to end the session
+```
 # Crouton References
 
 1. [Main crouton page](https://github.com/dnschneid/crouton)
