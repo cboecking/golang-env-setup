@@ -5,6 +5,7 @@ Quick Links: [vim cheatsheet](http://www.worldtimzone.com/res/vi.html), [vim-go 
 * ,v ---> :GoDef with vertical split
 * ,i ---> :GoInfo
 * K ---> :GoDoc
+* :GoRename ----> refactor variable
 * motion+if+tab ---> inside function braces - example: vif select contents of function inside braces
 * motion+af+tab ---> all function - example: vaf select contents of function including function definition
 
