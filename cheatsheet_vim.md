@@ -9,3 +9,4 @@
 * :noh - no highlight
 * :set hls - highlight search
 * ctrl-d - auto complete commands
+* :bd - close and delete current buffer (acts like c-o)
