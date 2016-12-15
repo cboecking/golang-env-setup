@@ -10,7 +10,7 @@
 * :set hls - highlight search
 * ctrl-d - auto complete commands
 * :bd - close and delete current buffer (acts like c-o)
-* block comments
+* block comments [link](http://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim)
   * comment
     * c-v and move cursor to highlight a block
     * shift i
