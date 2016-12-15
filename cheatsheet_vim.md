@@ -10,3 +10,12 @@
 * :set hls - highlight search
 * ctrl-d - auto complete commands
 * :bd - close and delete current buffer (acts like c-o)
+* block comments
+  * comment
+    * c-v and move cursor to highlight a block
+    * shift i
+    * type characters: example //
+    * esc and wait
+  * uncomment
+    * c-v and move cursor to highlight a block
+    * d to delete
