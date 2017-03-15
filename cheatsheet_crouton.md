@@ -16,7 +16,7 @@
 #### Start instance
 * `ec` or `ec -n NAME_OF_INSTALL` example: `ec -n xenial`
 * NOTE: The `ec` is an alias for `enter-chroot`. This alias is created during the `go_install.sh` script.
-* start: sudo startxfce4
+* start xfce: sudo startxfce4
 
 #### Common tasts
 * List installations: `sudo edit-chroot -a` or `-al` to include version details
