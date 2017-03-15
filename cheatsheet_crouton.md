@@ -9,14 +9,13 @@
 * 16.04 `sudo sh crouton -r xenial -t cli-extra`
 * Note: the instance is named either 'trusty' or 'xenial' unless you offer a `-n custom_name`
 * note: I recommend you create a pristine (chrootname-pristine.tar.gz) backup after you finish your installation (see below).
+* start: `ec` or `ec -n NAME_OF_INSTALL` example: `ec -n xenial`
+* NOTE: The `ec` is an alias for `enter-chroot`. This alias is created during the `go_install.sh` script.
 
 #### Installation xcfe
-* install: sudo sh ~/Downloads/crouton -t xfce -n xenialxfce
-
-#### Start instance
-* `ec` or `ec -n NAME_OF_INSTALL` example: `ec -n xenial`
-* NOTE: The `ec` is an alias for `enter-chroot`. This alias is created during the `go_install.sh` script.
-* start xfce: sudo startxfce4
+* install: `sudo sh ~/Downloads/crouton -t xfce -n xenialxfce`
+* start xfce: `sudo startxfce4`
+* switch between: `Ctrl+Alt+Shift+Back` and `Ctrl+Alt+Shift+Forward`
 
 #### Common tasts
 * List installations: `sudo edit-chroot -a` or `-al` to include version details
