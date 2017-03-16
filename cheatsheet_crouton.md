@@ -17,6 +17,10 @@
 * start xfce: `sudo startxfce4`
 * switch between: `Ctrl+Alt+Shift+Back` and `Ctrl+Alt+Shift+Forward`
 
+#### Installation unity
+* install: `sudo sh ~/Downloads/crouton -t unity,xiwi -n xenialunity`
+* start unity: `sudo startunity`
+
 #### Common tasts
 * List installations: `sudo edit-chroot -a` or `-al` to include version details
 * Create backup: `sudo edit-chroot -b chrootname` - creates file named chrootname-yyyymmdd-hhmm.tar.gz.
