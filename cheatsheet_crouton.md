@@ -25,6 +25,7 @@
   * Settings Manager > Appearance > Style: select Numix or Greybird
   * Settings Manager > Window Manager > Style: select Numix or Greybird
   * Setting Manager > Appearance > Icons: select Elementary Xfce dark
+  * Setting Manager > Mouse and Touchpad > Devices > TouchPad > disable mouse when typing for 1 second
   * Setting Manager > Panel > Add New Items, then select "Whisker Menu" and click "Add", then do the same for the "Indicator Plugin"
 * [Tweek Source](http://www.webupd8.org/2013/12/things-to-do-after-installing-ubuntu-on.html)
 
