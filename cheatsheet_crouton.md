@@ -17,9 +17,9 @@
 * start xfce: `sudo startxfce4`
 * switch between: `Ctrl+Alt+Shift+Back` and `Ctrl+Alt+Shift+Forward`
 * Common tools/tweeks:
-  * `sudo apt-get install leafpad bash-completion ubuntu-restricted-extras ttf-ubuntu-font-family xubuntu-icon-theme`
+  * `sudo apt-get install -y chromium-browser leafpad bash-completion ubuntu-restricted-extras ttf-ubuntu-font-family xubuntu-icon-theme`
   * `sudo apt-get purge xscreensaver`
-  * `sudo apt-get install xfce4-whiskermenu-plugin xfce4-indicator-plugin`
+  * `sudo apt-get install -y xfce4-whiskermenu-plugin xfce4-indicator-plugin`
   * `sudo apt-get install --no-install-recommends indicator-sound`
   * Settings Manager > Appearance, on the "Fonts" tab check the "Enable anti-aliasing" box and under "hinting", select "slight"
   * Settings Manager > Appearance > Style: select Numix or Greybird
