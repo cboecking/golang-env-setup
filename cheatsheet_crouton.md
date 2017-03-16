@@ -21,6 +21,7 @@
   * `sudo dpkg-reconfigure locales`
   * reboot and execute "locale" from terminal to confirm
 * Common tools/tweeks:
+  * `sudo apt-get update -y`
   * `sudo apt-get install -y telnet vim chromium-browser leafpad bash-completion ubuntu-restricted-extras ttf-ubuntu-font-family xubuntu-icon-theme xfce4-whiskermenu-plugin xfce4-indicator-plugin --no-install-recommends indicator-sound`
   * `sudo apt-get purge xscreensaver`
   * Settings Manager > Appearance, on the "Fonts" tab check the "Enable anti-aliasing" box and under "hinting", select "slight"
