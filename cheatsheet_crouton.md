@@ -16,7 +16,7 @@
 * install: `sudo sh ~/Downloads/crouton -t xfce -n xenialxfce`
 * start xfce: `sudo startxfce4`
 * switch between: `Ctrl+Alt+Shift+Back` and `Ctrl+Alt+Shift+Forward`
-* Common tools:
+* Common tools/tweeks:
   * `sudo apt-get install leafpad bash-completion ubuntu-restricted-extras ttf-ubuntu-font-family xubuntu-icon-theme`
   * `sudo apt-get purge xscreensaver`
   * `sudo apt-get install xfce4-whiskermenu-plugin xfce4-indicator-plugin`
