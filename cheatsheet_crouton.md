@@ -21,7 +21,7 @@
   * sudo dpkg-reconfigure locales
   * reboot and execute "locale" from terminal to confirm
 * Common tools/tweeks:
-  * `sudo apt-get install -y vim chromium-browser leafpad bash-completion ubuntu-restricted-extras ttf-ubuntu-font-family xubuntu-icon-theme`
+  * `sudo apt-get install -y telnet vim chromium-browser leafpad bash-completion ubuntu-restricted-extras ttf-ubuntu-font-family xubuntu-icon-theme`
   * `sudo apt-get purge xscreensaver`
   * `sudo apt-get install -y xfce4-whiskermenu-plugin xfce4-indicator-plugin`
   * `sudo apt-get install --no-install-recommends indicator-sound`
