@@ -17,7 +17,11 @@
 * start xfce: `sudo startxfce4`
 * switch between: `Ctrl+Alt+Shift+Back` and `Ctrl+Alt+Shift+Forward`
 * Common tools:
-** `sudo apt-get install leafpad`
+  * `sudo apt-get install leafpad bash-completion ubuntu-restricted-extras ttf-ubuntu-font-family xubuntu-icon-theme`
+  * `sudo apt-get purge xscreensaver`
+  * `sudo apt-get install xfce4-whiskermenu-plugin xfce4-indicator-plugin`
+  * `sudo apt-get install --no-install-recommends indicator-sound`
+* [tweek Source] (http://www.webupd8.org/2013/12/things-to-do-after-installing-ubuntu-on.html)
 
 #### Installation unity
 * install: `sudo sh ~/Downloads/crouton -t unity,xiwi -n xenialunity`
