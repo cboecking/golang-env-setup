@@ -21,6 +21,11 @@
   * `sudo apt-get purge xscreensaver`
   * `sudo apt-get install xfce4-whiskermenu-plugin xfce4-indicator-plugin`
   * `sudo apt-get install --no-install-recommends indicator-sound`
+  * Settings Manager > Appearance, on the "Fonts" tab check the "Enable anti-aliasing" box and under "hinting", select "slight"
+  * Settings Manager > Appearance > Style: select Numix or Greybird
+  * Settings Manager > Window Manager > Style: select Numix or Greybird
+  * Setting Manager > Appearance > Icons: select Elementary Xfce dark
+  * Setting Manager > Panel > Add New Items, then select "Whisker Menu" and click "Add", then do the same for the "Indicator Plugin"
 * [Tweek Source](http://www.webupd8.org/2013/12/things-to-do-after-installing-ubuntu-on.html)
 
 #### Installation unity
