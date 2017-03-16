@@ -13,7 +13,7 @@
 * NOTE: The `ec` is an alias for `enter-chroot`. This alias is created during the `go_install.sh` script.
 
 #### Installation xcfe
-* install: `sudo sh ~/Downloads/crouton -t xfce -n xenialxfce`
+* install: `sudo sh ~/Downloads/crouton -t xfce,xiwi -n xenialxfce`
 * start xfce: `sudo startxfce4`
 * switch between: `Ctrl+Alt+Shift+Back` and `Ctrl+Alt+Shift+Forward`
 * set locale
