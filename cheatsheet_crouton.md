@@ -16,6 +16,10 @@
 * install: `sudo sh ~/Downloads/crouton -t xfce -n xenialxfce`
 * start xfce: `sudo startxfce4`
 * switch between: `Ctrl+Alt+Shift+Back` and `Ctrl+Alt+Shift+Forward`
+* set locale
+  * sudo locale-gen "en_US.UTF-8"
+  * sudo dpkg-reconfigure locales
+  * reboot and execute "locale" from terminal to confirm
 * Common tools/tweeks:
   * `sudo apt-get install -y vim chromium-browser leafpad bash-completion ubuntu-restricted-extras ttf-ubuntu-font-family xubuntu-icon-theme`
   * `sudo apt-get purge xscreensaver`
