@@ -16,6 +16,8 @@
 * install: `sudo sh ~/Downloads/crouton -t xfce -n xenialxfce`
 * start xfce: `sudo startxfce4`
 * switch between: `Ctrl+Alt+Shift+Back` and `Ctrl+Alt+Shift+Forward`
+* Common tools:
+** `sudo apt-get install leafpad`
 
 #### Installation unity
 * install: `sudo sh ~/Downloads/crouton -t unity,xiwi -n xenialunity`
