@@ -15,7 +15,6 @@
 #### Installation xcfe
 * install: `sudo sh ~/Downloads/crouton -t xfce,xiwi -n xenialxfce`
 * start xfce: `sudo startxfce4`
-* switch between: `Ctrl+Alt+Shift+Back` and `Ctrl+Alt+Shift+Forward`
 * set locale
   * `sudo apt-get update -y`
   * `sudo locale-gen "en_US.UTF-8"`
