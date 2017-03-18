@@ -21,6 +21,7 @@
   * `sudo locale-gen "en_US.UTF-8"`
   * `sudo dpkg-reconfigure locales`
   * reboot and execute "locale" from terminal to confirm
+  * NOTE: [need update script without prompts](http://serverfault.com/questions/362903/how-do-you-set-a-locale-non-interactively-on-debian-ubuntu)
 * Common tools/tweeks:
   * `sudo apt-get update -y`
   * `sudo apt-get install -y telnet vim chromium-browser leafpad bash-completion ubuntu-restricted-extras ttf-ubuntu-font-family xubuntu-icon-theme xfce4-whiskermenu-plugin xfce4-indicator-plugin`
