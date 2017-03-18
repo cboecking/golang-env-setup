@@ -12,7 +12,7 @@
 * start: `ec` or `ec -n NAME_OF_INSTALL` example: `ec -n xenial`
 * NOTE: The `ec` is an alias for `enter-chroot`. This alias is created during the `go_install.sh` script.
 
-#### Installation xcfe
+#### Installation xcfe Desktop
 * install: `sudo sh ~/Downloads/crouton -t xfce,xiwi -n xenialxfce`
 * start xfce: `sudo startxfce4`
 * set locale
@@ -30,10 +30,6 @@
   * Setting Manager > Appearance > Icons: select Elementary Xfce
   * Setting Manager > Panel > Add New Items, then select "Whisker Menu" and click "Add", then do the same for the "Indicator Plugin"
 * [Tweek Source](http://www.webupd8.org/2013/12/things-to-do-after-installing-ubuntu-on.html)
-
-#### Installation unity
-* install: `sudo sh ~/Downloads/crouton -t unity,xiwi -n xenialunity`
-* start unity: `sudo startunity`
 
 #### Common tasts
 * List installations: `sudo edit-chroot -a` or `-al` to include version details
