@@ -24,7 +24,7 @@
   * NOTE: [need update script without prompts](http://serverfault.com/questions/362903/how-do-you-set-a-locale-non-interactively-on-debian-ubuntu)
 * Common tools/tweeks:
   * `sudo apt-get update -y`
-  * `sudo apt-get install -y telnet vim chromium-browser leafpad bash-completion ubuntu-restricted-extras ttf-ubuntu-font-family xubuntu-icon-theme xfce4-whiskermenu-plugin xfce4-indicator-plugin`
+  * `sudo apt-get install -y htop telnet vim chromium-browser leafpad bash-completion ubuntu-restricted-extras ttf-ubuntu-font-family xubuntu-icon-theme xfce4-whiskermenu-plugin xfce4-indicator-plugin`
   * `sudo apt-get purge -y xscreensaver`
   * Settings Manager > Appearance, on the "Fonts" tab check the "Enable anti-aliasing" box and under "hinting", select "slight"
   * Settings Manager > Appearance > Style: select Greybird
