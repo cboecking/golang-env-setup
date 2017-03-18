@@ -25,9 +25,10 @@
   * `sudo apt-get update -y`
   * `sudo apt-get install -y htop telnet vim chromium-browser leafpad bash-completion ubuntu-restricted-extras ttf-ubuntu-font-family xubuntu-icon-theme xfce4-whiskermenu-plugin xfce4-indicator-plugin`
   * `sudo apt-get purge -y xscreensaver`
-  * Settings Manager > Appearance, on the "Fonts" tab check the "Enable anti-aliasing" box and under "hinting", select "slight"
-  * Settings Manager > Appearance > Style: select Greybird
-  * Setting Manager > Appearance > Icons: select Elementary Xfce
+  * Settings Manager > Appearance: 
+    * Fonts > check the "Enable anti-aliasing" box and under "hinting", select "slight"
+    * Style > select Greybird
+    * Icons > select Elementary Xfce
   * Setting Manager > Panel > Add New Items, then select "Whisker Menu" and click "Add", then do the same for the "Indicator Plugin"
 * [Tweek Source](http://www.webupd8.org/2013/12/things-to-do-after-installing-ubuntu-on.html)
 
