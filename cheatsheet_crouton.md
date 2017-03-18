@@ -17,13 +17,15 @@
 * start xfce: `sudo startxfce4`
 * switch between: `Ctrl+Alt+Shift+Back` and `Ctrl+Alt+Shift+Forward`
 * set locale
+  * `sudo apt-get update -y`
   * `sudo locale-gen "en_US.UTF-8"`
   * `sudo dpkg-reconfigure locales`
   * reboot and execute "locale" from terminal to confirm
 * Common tools/tweeks:
   * `sudo apt-get update -y`
-  * `sudo apt-get install -y telnet vim chromium-browser leafpad bash-completion ubuntu-restricted-extras ttf-ubuntu-font-family xubuntu-icon-theme xfce4-whiskermenu-plugin xfce4-indicator-plugin --no-install-recommends indicator-sound`
-  * `sudo apt-get purge xscreensaver`
+  * `sudo apt-get install -y telnet vim chromium-browser leafpad bash-completion ubuntu-restricted-extras ttf-ubuntu-font-family xubuntu-icon-theme xfce4-whiskermenu-plugin xfce4-indicator-plugin`
+  * `sudo apt-get install -y --no-install-recommends indicator-sound`
+  * `sudo apt-get purge -y xscreensaver`
   * Settings Manager > Appearance, on the "Fonts" tab check the "Enable anti-aliasing" box and under "hinting", select "slight"
   * Settings Manager > Appearance > Style: select Numix or Greybird
   * Settings Manager > Window Manager > Style: select Numix or Greybird
