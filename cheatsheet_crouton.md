@@ -37,3 +37,6 @@
 * List installations: `sudo edit-chroot -a` or `-al` to include version details
 * Create backup: `sudo edit-chroot -b chrootname` - creates file named chrootname-yyyymmdd-hhmm.tar.gz.
 * Restore of an existing instance: `sudo edit-chroot -r chrootname -f path_to_backup_file.tar.gz`
+
+#### Misc tasks
+* [Check speed of a disk - including SD Card](https://github.com/geerlingguy/raspberry-pi-dramble/issues/7)
